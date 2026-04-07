@@ -74,3 +74,22 @@ def debug_messages(messages):
                 elif isinstance(block, dict):
                     if block.get('type') == 'tool_result':
                         print(f"  📥 TOOL_RESULT: {block.get('content', '')[:100]}...")
+
+
+def debug_response_messages(response, messages):
+    print()
+    print()
+
+    print("response start" + "*"*50)
+    print(response)
+    print("response end" + "*"*50)
+
+    print()
+    print()
+
+    print("="*50)
+    print_messages(messages)
+    print("="*50)
+
+    print()
+    print()
