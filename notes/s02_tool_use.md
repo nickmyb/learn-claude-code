@@ -28,6 +28,31 @@ response = client.messages.create(
 )
 ```
 
+## tool交互
+
+- LLM只会告诉你需要调用工具,但真实的工具调用需要自己实现harness
+
+```
+# -- The dispatch map: {tool_name: handler} --
+TOOL_HANDLERS = {
+    "bash":       lambda **kw: run_bash(kw["command"]),
+    "read_file":  lambda **kw: run_read(kw["path"], kw.get("limit")),
+    "write_file": lambda **kw: run_write(kw["path"], kw["content"]),
+    "edit_file":  lambda **kw: run_edit(kw["path"], kw["old_text"], kw["new_text"]),
+}
+
+
+results = []
+for block in response.content:
+    if block.type == "tool_use":
+        handler = TOOL_HANDLERS.get(block.name)
+        output = handler(**block.input) if handler else f"Unknown tool: {block.name}"
+        print(f"> {block.name}:")
+        print(output[:200])
+        results.append({"type": "tool_result", "tool_use_id": block.id, "content": output})
+messages.append({"role": "user", "content": results})
+```
+
 ## block
 
 ```
