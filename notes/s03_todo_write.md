@@ -320,6 +320,15 @@ SYSTEM = """
 6. 一次性将 #2 #3 #4 都标记为 completed
 ```
 
+```
+SYSTEM = f"""You are a coding agent at {WORKDIR}.
+Use the todo tool to plan multi-step tasks. 
+Mark in_progress before starting each task, completed when done.
+IMPORTANT: Complete tasks one at a time. Each task should correspond to 
+a separate tool call. Do not combine multiple pending tasks into one action.
+Prefer tools over prose."""
+```
+
 ## 资源
 
 - [prompt-engineering/use-xml-tags](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags)
