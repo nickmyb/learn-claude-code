@@ -83,22 +83,22 @@ def agent_loop(messages: list):
         response = client.messages.create(
             model=MODEL, system=SYSTEM, messages=messages,
             tools=TOOLS, max_tokens=16000,
-            thinking={  # token爆炸
-                "type": "enabled",
-                "budget_tokens": 10000  # 分配给思考的 token 数
-            },
+            # thinking={  # token爆炸
+            #     "type": "enabled",
+            #     "budget_tokens": 10000  # 分配给思考的 token 数
+            # },
         )
         # Append assistant turn
         messages.append({"role": "assistant", "content": response.content})
 
-        print("response:")
-        print(response)
-        print("response end")
-
-        from formatter import print_messages
-        print("="*50)
-        print_messages(messages)
-        print("="*50)
+        # print("response start" + "*"*50)
+        # print(response)
+        # print("response end" + "*"*50)
+        #
+        # from formatter import print_messages
+        # print("="*50)
+        # print_messages(messages)
+        # print("="*50)
 
         # If the model didn't call a tool, we're done
         if response.stop_reason != "tool_use":
