@@ -15,6 +15,7 @@ forces it to keep updating when it forgets.
                           +---------------+
                                 |
                     +-----------+-----------+
+
                     | TodoManager state     |
                     | [ ] task A            |
                     | [>] task B <- doing   |
@@ -159,6 +160,16 @@ TOOLS = [
      "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {"type": "object", "properties": {"id": {"type": "string"}, "text": {"type": "string"}, "status": {"type": "string", "enum": ["pending", "in_progress", "completed"]}}, "required": ["id", "text", "status"]}}}, "required": ["items"]}},
 ]
 
+# 渐进式提醒
+def get_reminder(rounds: int) -> str | None:
+    if rounds == 3:
+        return "<reminder>Consider updating your todos.</reminder>"
+    elif rounds == 6:
+        return "<reminder>Please update your todos to track progress.</reminder>"
+    elif rounds >= 9 and rounds % 3 == 0:
+        return "<warning>You haven't updated todos in a while.</warning>"
+    return None
+
 
 # -- Agent loop with nag reminder injection --
 def agent_loop(messages: list):
@@ -167,9 +178,17 @@ def agent_loop(messages: list):
         # Nag reminder is injected below, alongside tool results
         response = client.messages.create(
             model=MODEL, system=SYSTEM, messages=messages,
-            tools=TOOLS, max_tokens=8000,
+            tools=TOOLS, max_tokens=16000,
+            thinking={
+                "type": "enabled",
+                "budget_tokens": 10000  # 分配给思考的 token 数
+            },
         )
         messages.append({"role": "assistant", "content": response.content})
+
+        from formatter import debug_response_messages
+        debug_response_messages(response, messages)
+
         if response.stop_reason != "tool_use":
             return
         results = []
@@ -188,7 +207,9 @@ def agent_loop(messages: list):
                     used_todo = True
         rounds_since_todo = 0 if used_todo else rounds_since_todo + 1
         if rounds_since_todo >= 3:
-            results.append({"type": "text", "text": "<reminder>Update your todos.</reminder>"})
+            reminder = get_reminder(rounds_since_todo)
+            if reminder:
+                results.append({"type": "text", "text": reminder})
         messages.append({"role": "user", "content": results})
 
 
