@@ -465,3 +465,12 @@ def run_bash(command: str) -> str:
     # ... 执行逻辑
     pass
 ```
+
+## Modern Harness VS ReAct/Langchain/AutoGPT
+
+- Modern Harness
+  - 模型自己决定
+  - 工具调用必须符合 schema，输出格式要对
+- ReAct/Langchain/AutoGPT
+  - prompt强制定义输出格式(LLM填空)
+  - 强制定义workflow
