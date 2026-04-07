@@ -4,6 +4,16 @@
 
 True 循环直到 stop_reason != "tool_use"
 
+```
+while True:
+    response = client.messages.create(...)
+    messages.append({"role": "assistant", "content": response.content})
+    if response.stop_reason != "tool_use":
+        return
+    # 执行工具，结果用 role: "user" 追加到 messages
+```
+
+
 ## message
 
 - system: 设定 AI 行为规则
