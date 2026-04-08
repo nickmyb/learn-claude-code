@@ -121,15 +121,15 @@ def run_subagent(prompt: str) -> str:
         response = client.messages.create(
             model=MODEL, system=SUBAGENT_SYSTEM, messages=sub_messages,
             tools=CHILD_TOOLS, max_tokens=16000,
-            thinking={
-                "type": "enabled",
-                "budget_tokens": 10000  # 分配给思考的 token 数
-            },
+            # thinking={
+            #     "type": "enabled",
+            #     "budget_tokens": 10000  # 分配给思考的 token 数
+            # },
         )
         sub_messages.append({"role": "assistant", "content": response.content})
 
-        from formatter import debug_response_messages
-        debug_response_messages(response, sub_messages, env="sub")
+        # from formatter import debug_response_messages
+        # debug_response_messages(response, sub_messages, env="sub")
 
         if response.stop_reason != "tool_use":
             break
@@ -156,15 +156,15 @@ def agent_loop(messages: list):
         response = client.messages.create(
             model=MODEL, system=SYSTEM, messages=messages,
             tools=PARENT_TOOLS, max_tokens=16000,
-            thinking={
-                "type": "enabled",
-                "budget_tokens": 10000  # 分配给思考的 token 数
-            },
+            # thinking={
+            #     "type": "enabled",
+            #     "budget_tokens": 10000  # 分配给思考的 token 数
+            # },
         )
         messages.append({"role": "assistant", "content": response.content})
 
-        from formatter import debug_response_messages
-        debug_response_messages(response, messages)
+        # from formatter import debug_response_messages
+        # debug_response_messages(response, messages)
 
         if response.stop_reason != "tool_use":
             return
