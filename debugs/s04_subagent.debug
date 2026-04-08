@@ -1,0 +1,453 @@
+/Users/nickmyb/.local/bin/uv run /Users/nickmyb/Codes/learn-claude-code/.venv/bin/python /Users/nickmyb/Codes/learn-claude-code/agents/s04_subagent.py
+s04 >> Delegate: read all .py files in directory agents and file name start in [s01_, s02_, s03_, s04] and summarize what each one does
+
+
+`main` response start**************************************************
+Message(id='msg_012GEB2KHu6hK3Kth4vau5ci', container=None, content=[ThinkingBlock(signature='EvcCClsIDBgCKkAQ4rDVjR9uVUONtEUU4Gi3qOmSEi7F5fQP5UtBG/QUGOirk7pXtxaI1y1MLH4MznjjWuqW+Kpy1CgOxVSyfVaLMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgyfS4btGxDqSJC6a+8aDCLqhLFubtzkWD1nTSIwvLL7Mgumpn0tkVahQQ0g7NSz22E50L8a63852UhdDUEDtRlHzYy5063Q5bCVrLE5KskBg+tze5dySn7dTZmJL9r4W9bE5U4gLJjmIH25ZoKzY2Uyf+4tC83lNTy6CcYPJMPReXhKO0DgoAlHuBMeTLxzrMB7IuUSNicSQw4Oj1lcP3Cuzu/IF0rnsKavnFw6KmDE6+8PHJFtqJn1KPuAGJ6TOzLRH26SXbWhbLyhWpjYvGB7YNxLj6gh9e4XWMmrxFdfPfhaaeScFg+1mYQ4trelOQOGS/B4xARIaJwNi20asTO/6e96S7zwZnD0JIHkh8wQgD+sWD9PwrDLGAE=', thinking='The user wants me to delegate a task to read all .py files in the `agents` directory where the file names start with `s01_`, `s02_`, `s03_`, or `s04_`, and summarize what each one does.', type='thinking'), ToolUseBlock(id='toolu_01MD2PTwcUTjo15Z62tMoEUa', caller=DirectCaller(type='direct'), input={'description': 'Read and summarize .py files in agents/ directory starting with s01_, s02_, s03_, s04_', 'prompt': 'Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .py files whose names start with s01_, s02_, s03_, or s04_. Read each file and provide a clear summary of what each one does.'}, name='task', type='tool_use')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='tool_use', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=951, output_tokens=213, server_tool_use=None, service_tier='standard'))
+`main` response end**************************************************
+
+
+`main`==================================================
+[
+  {
+    "role": "user",
+    "content": "Delegate: read all .py files in directory agents and file name start in [s01_, s02_, s03_, s04] and summarize what each one does"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EvcCClsIDBgCKkAQ4rDVjR9uVUONtEUU4Gi3qOmSEi7F5fQP5UtBG/QUGOirk7pXtxaI1y1MLH4MznjjWuqW+Kpy1CgOxVSyfVaLMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgyfS4btGxDqSJC6a+8aDCLqhLFubtzkWD1nTSIwvLL7Mgumpn0tkVahQQ0g7NSz22E50L8a63852UhdDUEDtRlHzYy5063Q5bCVrLE5KskBg+tze5dySn7dTZmJL9r4W9bE5U4gLJjmIH25ZoKzY2Uyf+4tC83lNTy6CcYPJMPReXhKO0DgoAlHuBMeTLxzrMB7IuUSNicSQw4Oj1lcP3Cuzu/IF0rnsKavnFw6KmDE6+8PHJFtqJn1KPuAGJ6TOzLRH26SXbWhbLyhWpjYvGB7YNxLj6gh9e4XWMmrxFdfPfhaaeScFg+1mYQ4trelOQOGS/B4xARIaJwNi20asTO/6e96S7zwZnD0JIHkh8wQgD+sWD9PwrDLGAE=",
+        "thinking": "The user wants me to delegate a task to read all .py files in the `agents` directory where the file names start with `s01_`, `s02_`, `s03_`, or `s04_`, and summarize what each one does.",
+        "type": "thinking"
+      },
+      {
+        "id": "toolu_01MD2PTwcUTjo15Z62tMoEUa",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "description": "Read and summarize .py files in agents/ directory starting with s01_, s02_, s03_, s04_",
+          "prompt": "Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .py files whose names start with s01_, s02_, s03_, or s04_. Read each file and provide a clear summary of what each one does."
+        },
+        "name": "task",
+        "type": "tool_use"
+      }
+    ]
+  }
+]
+`main`==================================================
+
+
+> task (Read and summarize .py files in agents/ directory starting with s01_, s02_, s03_, s04_): Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .
+
+
+`sub` response start**************************************************
+Message(id='msg_016roM9fmfqUpURXc83UWvNR', container=None, content=[ThinkingBlock(signature='EpoCClsIDBgCKkDCJgj8NpM2PODyLJa3/a1xS84leq3ACzf3R4fnQftRIrpqasqxoa0YL53xzwvUOvEPmpY+oFIP4grI2GLMaUs/MhFjbGF1ZGUtc29ubmV0LTQtNjgAEgw7iOSeKKbXkcd/U6YaDI4fAAAP8149hMZphyIwmJoIr6cXwFCk0yeuewXyP3HNw8xSm6tMUfFVooLujYzsN02LvHJBG9lItFh0fhwxKm3qGtObRm9pYB/Qk7p2z6GY5GLFtVy9yKsLRqxyG2AMWuQtxwff0tThGBv4gPHKOsDGVgUVFgAc+NCrNuQLcYHIhNG5ycec8K6lsVUqo5kFrifLQ8xgPwTzTLlWRJogqNTGgNbJ7iT/LUt3/Y88GAE=', thinking='Let me first find all the .py files in the specified directory that match the naming pattern.', type='thinking'), TextBlock(citations=None, text='Sure! Let me first find all matching `.py` files, then read them all at once.', type='text'), ToolUseBlock(id='toolu_01QfeHJZ5zwAeu4xhGA76Stv', caller=DirectCaller(type='direct'), input={'command': 'find /Users/nickmyb/Codes/learn-claude-code/agents -maxdepth 1 -name "s0[1-4]_*.py" | sort'}, name='bash', type='tool_use')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='tool_use', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=893, output_tokens=141, server_tool_use=None, service_tier='standard'))
+`sub` response end**************************************************
+
+
+`sub`==================================================
+[
+  {
+    "role": "user",
+    "content": "Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .py files whose names start with s01_, s02_, s03_, or s04_. Read each file and provide a clear summary of what each one does."
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EpoCClsIDBgCKkDCJgj8NpM2PODyLJa3/a1xS84leq3ACzf3R4fnQftRIrpqasqxoa0YL53xzwvUOvEPmpY+oFIP4grI2GLMaUs/MhFjbGF1ZGUtc29ubmV0LTQtNjgAEgw7iOSeKKbXkcd/U6YaDI4fAAAP8149hMZphyIwmJoIr6cXwFCk0yeuewXyP3HNw8xSm6tMUfFVooLujYzsN02LvHJBG9lItFh0fhwxKm3qGtObRm9pYB/Qk7p2z6GY5GLFtVy9yKsLRqxyG2AMWuQtxwff0tThGBv4gPHKOsDGVgUVFgAc+NCrNuQLcYHIhNG5ycec8K6lsVUqo5kFrifLQ8xgPwTzTLlWRJogqNTGgNbJ7iT/LUt3/Y88GAE=",
+        "thinking": "Let me first find all the .py files in the specified directory that match the naming pattern.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Sure! Let me first find all matching `.py` files, then read them all at once.",
+        "type": "text"
+      },
+      {
+        "id": "toolu_01QfeHJZ5zwAeu4xhGA76Stv",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "command": "find /Users/nickmyb/Codes/learn-claude-code/agents -maxdepth 1 -name \"s0[1-4]_*.py\" | sort"
+        },
+        "name": "bash",
+        "type": "tool_use"
+      }
+    ]
+  }
+]
+`sub`==================================================
+
+
+
+
+`sub` response start**************************************************
+Message(id='msg_01YMBJukfsF1y9S2KwrwcPQQ', container=None, content=[TextBlock(citations=None, text='Four files found. Now let me read them all simultaneously!', type='text'), ToolUseBlock(id='toolu_01XyFaeNSNMrjfqPTsx4kmgu', caller=DirectCaller(type='direct'), input={'path': '/Users/nickmyb/Codes/learn-claude-code/agents/s01_agent_loop.py'}, name='read_file', type='tool_use'), ToolUseBlock(id='toolu_01QDPGCLWztk6y9qWUDTArwu', caller=DirectCaller(type='direct'), input={'path': '/Users/nickmyb/Codes/learn-claude-code/agents/s02_tool_use.py'}, name='read_file', type='tool_use'), ToolUseBlock(id='toolu_01F3vV28kus3poxx3eSd1vME', caller=DirectCaller(type='direct'), input={'path': '/Users/nickmyb/Codes/learn-claude-code/agents/s03_todo_write.py'}, name='read_file', type='tool_use'), ToolUseBlock(id='toolu_01YcUg694H1YsNLLnVUBreRM', caller=DirectCaller(type='direct'), input={'path': '/Users/nickmyb/Codes/learn-claude-code/agents/s04_subagent.py'}, name='read_file', type='tool_use')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='tool_use', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=1156, output_tokens=278, server_tool_use=None, service_tier='standard'))
+`sub` response end**************************************************
+
+
+`sub`==================================================
+[
+  {
+    "role": "user",
+    "content": "Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .py files whose names start with s01_, s02_, s03_, or s04_. Read each file and provide a clear summary of what each one does."
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EpoCClsIDBgCKkDCJgj8NpM2PODyLJa3/a1xS84leq3ACzf3R4fnQftRIrpqasqxoa0YL53xzwvUOvEPmpY+oFIP4grI2GLMaUs/MhFjbGF1ZGUtc29ubmV0LTQtNjgAEgw7iOSeKKbXkcd/U6YaDI4fAAAP8149hMZphyIwmJoIr6cXwFCk0yeuewXyP3HNw8xSm6tMUfFVooLujYzsN02LvHJBG9lItFh0fhwxKm3qGtObRm9pYB/Qk7p2z6GY5GLFtVy9yKsLRqxyG2AMWuQtxwff0tThGBv4gPHKOsDGVgUVFgAc+NCrNuQLcYHIhNG5ycec8K6lsVUqo5kFrifLQ8xgPwTzTLlWRJogqNTGgNbJ7iT/LUt3/Y88GAE=",
+        "thinking": "Let me first find all the .py files in the specified directory that match the naming pattern.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Sure! Let me first find all matching `.py` files, then read them all at once.",
+        "type": "text"
+      },
+      {
+        "id": "toolu_01QfeHJZ5zwAeu4xhGA76Stv",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "command": "find /Users/nickmyb/Codes/learn-claude-code/agents -maxdepth 1 -name \"s0[1-4]_*.py\" | sort"
+        },
+        "name": "bash",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01QfeHJZ5zwAeu4xhGA76Stv",
+        "content": "/Users/nickmyb/Codes/learn-claude-code/agents/s01_agent_loop.py\n/Users/nickmyb/Codes/learn-claude-code/agents/s02_tool_use.py\n/Users/nickmyb/Codes/learn-claude-code/agents/s03_todo_write.py\n/Users/nickmyb/Codes/learn-claude-code/agents/s04_subagent.py"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "citations": null,
+        "text": "Four files found. Now let me read them all simultaneously!",
+        "type": "text"
+      },
+      {
+        "id": "toolu_01XyFaeNSNMrjfqPTsx4kmgu",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s01_agent_loop.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_01QDPGCLWztk6y9qWUDTArwu",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s02_tool_use.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_01F3vV28kus3poxx3eSd1vME",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s03_todo_write.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_01YcUg694H1YsNLLnVUBreRM",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s04_subagent.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      }
+    ]
+  }
+]
+`sub`==================================================
+
+
+
+
+`sub` response start**************************************************
+Message(id='msg_01A242DLFYhrcbiSatYQKf5o', container=None, content=[TextBlock(citations=None, text='Here is a clear summary of each file:\n\n---\n\n## 📁 File Summaries\n\n---\n\n### `s01_agent_loop.py` — **The Core Agent Loop**\n> *"The entire secret of an AI coding agent in one pattern."*\n\nThis is the **foundation** of the series. It implements the simplest possible agentic loop:\n- **Single tool:** `bash` — runs shell commands via `subprocess`.\n- **The loop:** Repeatedly calls the Anthropic LLM (`claude`), appends its response to a message history, executes any `bash` tool calls it makes, feeds the results back in, and repeats — **until the model stops requesting tools**.\n- **Safety:** Blocks a small set of dangerous commands (e.g., `rm -rf /`, `sudo`).\n- **Interface:** An interactive REPL (`s01 >>`) where users type tasks and the agent autonomously executes shell commands to solve them.\n\n**Key Insight:** The entire agent pattern is a `while stop_reason == "tool_use":` loop.\n\n---\n\n### `s02_tool_use.py` — **Expanded Tool Dispatch**\n> *"The loop didn\'t change at all. I just added tools."*\n\nBuilds directly on `s01` by **adding more tools** while keeping the same loop structure:\n- **Four tools:** `bash`, `read_file`, `write_file`, `edit_file` — giving the agent full file system access (reading, writing, and surgical text replacement).\n- **Tool Dispatch Map:** Introduces a `TOOL_HANDLERS` dictionary `{tool_name: handler_fn}` to cleanly route any tool call the model makes to the correct Python function.\n- **Workspace safety:** A `safe_path()` guard ensures all file operations stay within the working directory (no path traversal).\n- **Interface:** Same interactive REPL pattern (`s02 >>`).\n\n**Key Insight:** Expanding agent capability is purely additive — add a handler function, add the tool schema to the list, done. The loop is untouched.\n\n---\n\n### `s03_todo_write.py` — **Self-Tracking with TodoWrite**\n> *"The agent can track its own progress — and I can see it."*\n\nBuilds on `s02` by adding a **planning/progress-tracking layer**:\n- **New `todo` tool:** The LLM writes and updates a structured task list (`TodoManager`) with statuses: `pending`, `in_progress`, and `completed`. Only one task can be `in_progress` at a time (enforced by validation).\n- **Nag Reminder Injection:** If the model goes **3+ rounds without updating its todos**, a `<reminder>` message is automatically injected into the next tool result, escalating in urgency over time. This keeps the agent on track for long, multi-step tasks.\n- **Extended Thinking:** Enables Anthropic\'s "thinking" feature (`budget_tokens: 10000`) to let the model reason more deeply before acting.\n- **Interface:** Same REPL pattern (`s03 >>`).\n\n**Key Insight:** The agent can maintain observable, structured state about its own plan — and the harness can nudge it back on track when it drifts.\n\n---\n\n### `s04_subagent.py` — **Subagent / Context Isolation**\n> *"Process isolation gives context isolation for free."*\n\nThe most advanced pattern, introducing **parent/child agent delegation**:\n- **New `task` tool (parent only):** The parent agent can spawn a **subagent** by calling `task(prompt=..., description=...)`. The subagent runs in a completely **fresh message history** (`messages=[]`), does its work (using all base tools), and returns only a **text summary** to the parent.\n- **Context isolation:** The subagent\'s full tool-call history and intermediate steps are **discarded** after it finishes — only the final summary bubbles back up. This prevents the parent\'s context from being polluted by a subagent\'s verbose working.\n- **Shared filesystem:** Both parent and child operate on the same working directory, so the subagent\'s file changes are visible to the parent.\n- **No recursive spawning:** The child does NOT have the `task` tool, preventing infinite agent nesting.\n- **Safety limit:** The subagent loop caps at 30 iterations.\n\n**Key Insight:** Delegating work to a subagent with a clean context window keeps the parent focused and prevents context bloat on long, complex tasks.\n\n---\n\n## 🔁 Progression Summary\n\n| File | Core Concept | New Addition |\n|---|---|---|\n| `s01` | Agent Loop | `bash` tool + `while tool_use` loop |\n| `s02` | Tool Dispatch | `read_file`, `write_file`, `edit_file` + dispatch map |\n| `s03` | Planning | `todo` tool + nag reminder injection |\n| `s04` | Subagents | `task` tool + fresh-context child agents |\n\nEach file is a **self-contained, runnable learning step**, building one concept at a time on top of the last, forming a complete curriculum for understanding how production AI coding agents are structured.', type='text')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=9704, output_tokens=1216, server_tool_use=None, service_tier='standard'))
+`sub` response end**************************************************
+
+
+`sub`==================================================
+[
+  {
+    "role": "user",
+    "content": "Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .py files whose names start with s01_, s02_, s03_, or s04_. Read each file and provide a clear summary of what each one does."
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EpoCClsIDBgCKkDCJgj8NpM2PODyLJa3/a1xS84leq3ACzf3R4fnQftRIrpqasqxoa0YL53xzwvUOvEPmpY+oFIP4grI2GLMaUs/MhFjbGF1ZGUtc29ubmV0LTQtNjgAEgw7iOSeKKbXkcd/U6YaDI4fAAAP8149hMZphyIwmJoIr6cXwFCk0yeuewXyP3HNw8xSm6tMUfFVooLujYzsN02LvHJBG9lItFh0fhwxKm3qGtObRm9pYB/Qk7p2z6GY5GLFtVy9yKsLRqxyG2AMWuQtxwff0tThGBv4gPHKOsDGVgUVFgAc+NCrNuQLcYHIhNG5ycec8K6lsVUqo5kFrifLQ8xgPwTzTLlWRJogqNTGgNbJ7iT/LUt3/Y88GAE=",
+        "thinking": "Let me first find all the .py files in the specified directory that match the naming pattern.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Sure! Let me first find all matching `.py` files, then read them all at once.",
+        "type": "text"
+      },
+      {
+        "id": "toolu_01QfeHJZ5zwAeu4xhGA76Stv",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "command": "find /Users/nickmyb/Codes/learn-claude-code/agents -maxdepth 1 -name \"s0[1-4]_*.py\" | sort"
+        },
+        "name": "bash",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01QfeHJZ5zwAeu4xhGA76Stv",
+        "content": "/Users/nickmyb/Codes/learn-claude-code/agents/s01_agent_loop.py\n/Users/nickmyb/Codes/learn-claude-code/agents/s02_tool_use.py\n/Users/nickmyb/Codes/learn-claude-code/agents/s03_todo_write.py\n/Users/nickmyb/Codes/learn-claude-code/agents/s04_subagent.py"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "citations": null,
+        "text": "Four files found. Now let me read them all simultaneously!",
+        "type": "text"
+      },
+      {
+        "id": "toolu_01XyFaeNSNMrjfqPTsx4kmgu",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s01_agent_loop.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_01QDPGCLWztk6y9qWUDTArwu",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s02_tool_use.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_01F3vV28kus3poxx3eSd1vME",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s03_todo_write.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_01YcUg694H1YsNLLnVUBreRM",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "path": "/Users/nickmyb/Codes/learn-claude-code/agents/s04_subagent.py"
+        },
+        "name": "read_file",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01XyFaeNSNMrjfqPTsx4kmgu",
+        "content": "#!/usr/bin/env python3\n# Harness: the loop -- the model's first connection to the real world.\n\"\"\"\ns01_agent_loop.py - The Agent Loop\n\nThe entire secret of an AI coding agent in one pattern:\n\n    while stop_reason == \"tool_use\":\n        response = LLM(messages, tools)\n        execute tools\n        append results\n\n    +----------+      +-------+      +---------+\n    |   User   | ---> |  LLM  | ---> |  Tool   |\n    |  prompt  |      |       |      | execute |\n    +----------+      +---+---+      +----+----+\n                          ^               |\n                          |   tool_result |\n                          +---------------+\n                          (loop continues)\n\nThis is the core loop: feed tool results back to the model\nuntil the model decides to stop. Production agents layer\npolicy, hooks, and lifecycle controls on top.\n\"\"\"\n\nimport os\nimport subprocess\n\ntry:\n    import readline\n    # #143 UTF-8 backspace fix for macOS libedit\n    readline.parse_and_bind('set bind-tty-special-chars off')\n    readline.parse_and_bind('set input-meta on')\n    readline.parse_and_bind('set output-meta on')\n    readline.parse_and_bind('set convert-meta off')\n    readline.parse_and_bind('set enable-meta-keybindings on')\nexcept ImportError:\n    pass\n\nfrom anthropic import Anthropic\nfrom dotenv import load_dotenv\n\nload_dotenv(override=True)\n\nif os.getenv(\"ANTHROPIC_BASE_URL\"):\n    os.environ.pop(\"ANTHROPIC_AUTH_TOKEN\", None)\n\nclient = Anthropic(base_url=os.getenv(\"ANTHROPIC_BASE_URL\"))\nMODEL = os.environ[\"MODEL_ID\"]\n\nSYSTEM = f\"You are a coding agent at {os.getcwd()}. Use bash to solve tasks. Act, don't explain.\"\n\nTOOLS = [{\n    \"name\": \"bash\",\n    \"description\": \"Run a shell command.\",\n    \"input_schema\": {\n        \"type\": \"object\",\n        \"properties\": {\"command\": {\"type\": \"string\"}},\n        \"required\": [\"command\"],\n    },\n}]\n\n\ndef run_bash(command: str) -> str:\n    dangerous = [\"rm -rf /\", \"sudo\", \"shutdown\", \"reboot\", \"> /dev/\"]\n    if any(d in command for d in dangerous):\n        return \"Error: Dangerous command blocked\"\n    try:\n        r = subprocess.run(command, shell=True, cwd=os.getcwd(),\n                           capture_output=True, text=True, timeout=120)\n        out = (r.stdout + r.stderr).strip()\n        return out[:50000] if out else \"(no output)\"\n    except subprocess.TimeoutExpired:\n        return \"Error: Timeout (120s)\"\n    except (FileNotFoundError, OSError) as e:\n        return f\"Error: {e}\"\n\n\n# -- The core pattern: a while loop that calls tools until the model stops --\ndef agent_loop(messages: list):\n    while True:\n        response = client.messages.create(\n            model=MODEL, system=SYSTEM, messages=messages,\n            tools=TOOLS, max_tokens=16000,\n            # thinking={  # token爆炸\n            #     \"type\": \"enabled\",\n            #     \"budget_tokens\": 10000  # 分配给思考的 token 数\n            # },\n        )\n        # Append assistant turn\n        messages.append({\"role\": \"assistant\", \"content\": response.content})\n\n        # from formatter import debug_response_messages\n        # debug_response_messages(response, messages)\n\n        # If the model didn't call a tool, we're done\n        if response.stop_reason != \"tool_use\":\n            return\n        # Execute each tool call, collect results\n        results = []\n        for block in response.content:\n            if block.type == \"tool_use\":\n                print(f\"\\033[33m$ {block.input['command']}\\033[0m\")\n                output = run_bash(block.input[\"command\"])\n                print(output[:200])\n                results.append({\"type\": \"tool_result\", \"tool_use_id\": block.id,\n                                \"content\": output})\n        messages.append({\"role\": \"user\", \"content\": results})\n\n\nif __name__ == \"__main__\":\n    history = []\n    while True:\n        try:\n            query = input(\"\\033[36ms01 >> \\033[0m\")\n        except (EOFError, KeyboardInterrupt):\n            break\n        if query.strip().lower() in (\"q\", \"exit\", \"\"):\n            break\n        history.append({\"role\": \"user\", \"content\": query})\n        agent_loop(history)\n        response_content = history[-1][\"content\"]\n        if isinstance(response_content, list):\n            for block in response_content:\n                if hasattr(block, \"text\"):\n                    print(block.text)\n        print()"
+      },
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01QDPGCLWztk6y9qWUDTArwu",
+        "content": "#!/usr/bin/env python3\n# Harness: tool dispatch -- expanding what the model can reach.\n\"\"\"\ns02_tool_use.py - Tools\n\nThe agent loop from s01 didn't change. We just added tools to the array\nand a dispatch map to route calls.\n\n    +----------+      +-------+      +------------------+\n    |   User   | ---> |  LLM  | ---> | Tool Dispatch    |\n    |  prompt  |      |       |      | {                |\n    +----------+      +---+---+      |   bash: run_bash |\n                          ^          |   read: run_read |\n                          |          |   write: run_wr  |\n                          +----------+   edit: run_edit |\n                          tool_result| }                |\n                                     +------------------+\n\nKey insight: \"The loop didn't change at all. I just added tools.\"\n\"\"\"\n\nimport os\nimport subprocess\nfrom pathlib import Path\n\nfrom anthropic import Anthropic\nfrom dotenv import load_dotenv\n\nload_dotenv(override=True)\n\nif os.getenv(\"ANTHROPIC_BASE_URL\"):\n    os.environ.pop(\"ANTHROPIC_AUTH_TOKEN\", None)\n\nWORKDIR = Path.cwd()\nclient = Anthropic(base_url=os.getenv(\"ANTHROPIC_BASE_URL\"))\nMODEL = os.environ[\"MODEL_ID\"]\n\nSYSTEM = f\"You are a coding agent at {WORKDIR}. Use tools to solve tasks. Act, don't explain.\"\n\n\ndef safe_path(p: str) -> Path:\n    path = (WORKDIR / p).resolve()\n    if not path.is_relative_to(WORKDIR):\n        raise ValueError(f\"Path escapes workspace: {p}\")\n    return path\n\n\ndef run_bash(command: str) -> str:\n    dangerous = [\"rm -rf /\", \"sudo\", \"shutdown\", \"reboot\", \"> /dev/\"]\n    if any(d in command for d in dangerous):\n        return \"Error: Dangerous command blocked\"\n    try:\n        r = subprocess.run(command, shell=True, cwd=WORKDIR,\n                           capture_output=True, text=True, timeout=120)\n        out = (r.stdout + r.stderr).strip()\n        return out[:50000] if out else \"(no output)\"\n    except subprocess.TimeoutExpired:\n        return \"Error: Timeout (120s)\"\n\n\ndef run_read(path: str, limit: int = None) -> str:\n    try:\n        text = safe_path(path).read_text()\n        lines = text.splitlines()\n        if limit and limit < len(lines):\n            lines = lines[:limit] + [f\"... ({len(lines) - limit} more lines)\"]\n        return \"\\n\".join(lines)[:50000]\n    except Exception as e:\n        return f\"Error: {e}\"\n\n\ndef run_write(path: str, content: str) -> str:\n    try:\n        fp = safe_path(path)\n        fp.parent.mkdir(parents=True, exist_ok=True)\n        fp.write_text(content)\n        return f\"Wrote {len(content)} bytes to {path}\"\n    except Exception as e:\n        return f\"Error: {e}\"\n\n\ndef run_edit(path: str, old_text: str, new_text: str) -> str:\n    try:\n        fp = safe_path(path)\n        content = fp.read_text()\n        if old_text not in content:\n            return f\"Error: Text not found in {path}\"\n        fp.write_text(content.replace(old_text, new_text, 1))\n        return f\"Edited {path}\"\n    except Exception as e:\n        return f\"Error: {e}\"\n\n\n# -- The dispatch map: {tool_name: handler} --\nTOOL_HANDLERS = {\n    \"bash\":       lambda **kw: run_bash(kw[\"command\"]),\n    \"read_file\":  lambda **kw: run_read(kw[\"path\"], kw.get(\"limit\")),\n    \"write_file\": lambda **kw: run_write(kw[\"path\"], kw[\"content\"]),\n    \"edit_file\":  lambda **kw: run_edit(kw[\"path\"], kw[\"old_text\"], kw[\"new_text\"]),\n}\n\nTOOLS = [\n    {\"name\": \"bash\", \"description\": \"Run a shell command.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"command\": {\"type\": \"string\"}}, \"required\": [\"command\"]}},\n    {\"name\": \"read_file\", \"description\": \"Read file contents.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"limit\": {\"type\": \"integer\"}}, \"required\": [\"path\"]}},\n    {\"name\": \"write_file\", \"description\": \"Write content to file.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"content\": {\"type\": \"string\"}}, \"required\": [\"path\", \"content\"]}},\n    {\"name\": \"edit_file\", \"description\": \"Replace exact text in file.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"old_text\": {\"type\": \"string\"}, \"new_text\": {\"type\": \"string\"}}, \"required\": [\"path\", \"old_text\", \"new_text\"]}},\n]\n\n\ndef agent_loop(messages: list):\n    while True:\n        response = client.messages.create(\n            model=MODEL, system=SYSTEM, messages=messages,\n            tools=TOOLS, max_tokens=16000,\n            # thinking={\n            #     \"type\": \"enabled\",\n            #     \"budget_tokens\": 10000  # 分配给思考的 token 数\n            # },\n        )\n        messages.append({\"role\": \"assistant\", \"content\": response.content})\n\n        # from formatter import debug_response_messages\n        # debug_response_messages(response, messages)\n\n        if response.stop_reason != \"tool_use\":\n            return\n        results = []\n        for block in response.content:\n            if block.type == \"tool_use\":\n                handler = TOOL_HANDLERS.get(block.name)\n                output = handler(**block.input) if handler else f\"Unknown tool: {block.name}\"\n                print(f\"> {block.name}:\")\n                print(output[:200])\n                results.append({\"type\": \"tool_result\", \"tool_use_id\": block.id, \"content\": output})\n        messages.append({\"role\": \"user\", \"content\": results})\n\n\nif __name__ == \"__main__\":\n    history = []\n    while True:\n        try:\n            query = input(\"\\033[36ms02 >> \\033[0m\")\n        except (EOFError, KeyboardInterrupt):\n            break\n        if query.strip().lower() in (\"q\", \"exit\", \"\"):\n            break\n        history.append({\"role\": \"user\", \"content\": query})\n        agent_loop(history)\n        response_content = history[-1][\"content\"]\n        if isinstance(response_content, list):\n            for block in response_content:\n                if hasattr(block, \"text\"):\n                    print(block.text)\n        print()"
+      },
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01F3vV28kus3poxx3eSd1vME",
+        "content": "#!/usr/bin/env python3\n# Harness: planning -- keeping the model on course without scripting the route.\n\"\"\"\ns03_todo_write.py - TodoWrite\n\nThe model tracks its own progress via a TodoManager. A nag reminder\nforces it to keep updating when it forgets.\n\n    +----------+      +-------+      +---------+\n    |   User   | ---> |  LLM  | ---> | Tools   |\n    |  prompt  |      |       |      | + todo  |\n    +----------+      +---+---+      +----+----+\n                          ^               |\n                          |   tool_result |\n                          +---------------+\n                                |\n                    +-----------+-----------+\n\n                    | TodoManager state     |\n                    | [ ] task A            |\n                    | [>] task B <- doing   |\n                    | [x] task C            |\n                    +-----------------------+\n                                |\n                    if rounds_since_todo >= 3:\n                      inject <reminder>\n\nKey insight: \"The agent can track its own progress -- and I can see it.\"\n\"\"\"\n\nimport os\nimport subprocess\nfrom pathlib import Path\n\nfrom anthropic import Anthropic\nfrom dotenv import load_dotenv\n\nload_dotenv(override=True)\n\nif os.getenv(\"ANTHROPIC_BASE_URL\"):\n    os.environ.pop(\"ANTHROPIC_AUTH_TOKEN\", None)\n\nWORKDIR = Path.cwd()\nclient = Anthropic(base_url=os.getenv(\"ANTHROPIC_BASE_URL\"))\nMODEL = os.environ[\"MODEL_ID\"]\n\nSYSTEM = f\"\"\"You are a coding agent at {WORKDIR}.\nUse the todo tool to plan multi-step tasks. Mark in_progress before starting, completed when done.\nPrefer tools over prose.\"\"\"\n\n\n# -- TodoManager: structured state the LLM writes to --\nclass TodoManager:\n    def __init__(self):\n        self.items = []\n\n    def update(self, items: list) -> str:\n        if len(items) > 20:\n            raise ValueError(\"Max 20 todos allowed\")\n        validated = []\n        in_progress_count = 0\n        for i, item in enumerate(items):\n            text = str(item.get(\"text\", \"\")).strip()\n            status = str(item.get(\"status\", \"pending\")).lower()\n            item_id = str(item.get(\"id\", str(i + 1)))\n            if not text:\n                raise ValueError(f\"Item {item_id}: text required\")\n            if status not in (\"pending\", \"in_progress\", \"completed\"):\n                raise ValueError(f\"Item {item_id}: invalid status '{status}'\")\n            if status == \"in_progress\":\n                in_progress_count += 1\n            validated.append({\"id\": item_id, \"text\": text, \"status\": status})\n        if in_progress_count > 1:\n            raise ValueError(\"Only one task can be in_progress at a time\")\n        self.items = validated\n        return self.render()\n\n    def render(self) -> str:\n        if not self.items:\n            return \"No todos.\"\n        lines = []\n        for item in self.items:\n            marker = {\"pending\": \"[ ]\", \"in_progress\": \"[>]\", \"completed\": \"[x]\"}[item[\"status\"]]\n            lines.append(f\"{marker} #{item['id']}: {item['text']}\")\n        done = sum(1 for t in self.items if t[\"status\"] == \"completed\")\n        lines.append(f\"\\n({done}/{len(self.items)} completed)\")\n        return \"\\n\".join(lines)\n\n\nTODO = TodoManager()\n\n\n# -- Tool implementations --\ndef safe_path(p: str) -> Path:\n    path = (WORKDIR / p).resolve()\n    if not path.is_relative_to(WORKDIR):\n        raise ValueError(f\"Path escapes workspace: {p}\")\n    return path\n\ndef run_bash(command: str) -> str:\n    dangerous = [\"rm -rf /\", \"sudo\", \"shutdown\", \"reboot\", \"> /dev/\"]\n    if any(d in command for d in dangerous):\n        return \"Error: Dangerous command blocked\"\n    try:\n        r = subprocess.run(command, shell=True, cwd=WORKDIR,\n                           capture_output=True, text=True, timeout=120)\n        out = (r.stdout + r.stderr).strip()\n        return out[:50000] if out else \"(no output)\"\n    except subprocess.TimeoutExpired:\n        return \"Error: Timeout (120s)\"\n\ndef run_read(path: str, limit: int = None) -> str:\n    try:\n        lines = safe_path(path).read_text().splitlines()\n        if limit and limit < len(lines):\n            lines = lines[:limit] + [f\"... ({len(lines) - limit} more)\"]\n        return \"\\n\".join(lines)[:50000]\n    except Exception as e:\n        return f\"Error: {e}\"\n\ndef run_write(path: str, content: str) -> str:\n    try:\n        fp = safe_path(path)\n        fp.parent.mkdir(parents=True, exist_ok=True)\n        fp.write_text(content)\n        return f\"Wrote {len(content)} bytes\"\n    except Exception as e:\n        return f\"Error: {e}\"\n\ndef run_edit(path: str, old_text: str, new_text: str) -> str:\n    try:\n        fp = safe_path(path)\n        content = fp.read_text()\n        if old_text not in content:\n            return f\"Error: Text not found in {path}\"\n        fp.write_text(content.replace(old_text, new_text, 1))\n        return f\"Edited {path}\"\n    except Exception as e:\n        return f\"Error: {e}\"\n\n\nTOOL_HANDLERS = {\n    \"bash\":       lambda **kw: run_bash(kw[\"command\"]),\n    \"read_file\":  lambda **kw: run_read(kw[\"path\"], kw.get(\"limit\")),\n    \"write_file\": lambda **kw: run_write(kw[\"path\"], kw[\"content\"]),\n    \"edit_file\":  lambda **kw: run_edit(kw[\"path\"], kw[\"old_text\"], kw[\"new_text\"]),\n    \"todo\":       lambda **kw: TODO.update(kw[\"items\"]),\n}\n\nTOOLS = [\n    {\"name\": \"bash\", \"description\": \"Run a shell command.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"command\": {\"type\": \"string\"}}, \"required\": [\"command\"]}},\n    {\"name\": \"read_file\", \"description\": \"Read file contents.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"limit\": {\"type\": \"integer\"}}, \"required\": [\"path\"]}},\n    {\"name\": \"write_file\", \"description\": \"Write content to file.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"content\": {\"type\": \"string\"}}, \"required\": [\"path\", \"content\"]}},\n    {\"name\": \"edit_file\", \"description\": \"Replace exact text in file.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"old_text\": {\"type\": \"string\"}, \"new_text\": {\"type\": \"string\"}}, \"required\": [\"path\", \"old_text\", \"new_text\"]}},\n    {\"name\": \"todo\", \"description\": \"Update task list. Track progress on multi-step tasks.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"items\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"id\": {\"type\": \"string\"}, \"text\": {\"type\": \"string\"}, \"status\": {\"type\": \"string\", \"enum\": [\"pending\", \"in_progress\", \"completed\"]}}, \"required\": [\"id\", \"text\", \"status\"]}}}, \"required\": [\"items\"]}},\n]\n\n# 渐进式提醒\ndef get_reminder(rounds: int) -> str | None:\n    if rounds == 3:\n        return \"<reminder>Consider updating your todos.</reminder>\"\n    elif rounds == 6:\n        return \"<reminder>Please update your todos to track progress.</reminder>\"\n    elif rounds >= 9 and rounds % 3 == 0:\n        return \"<warning>You haven't updated todos in a while.</warning>\"\n    return None\n\n\n# -- Agent loop with nag reminder injection --\ndef agent_loop(messages: list):\n    rounds_since_todo = 0\n    while True:\n        # Nag reminder is injected below, alongside tool results\n        response = client.messages.create(\n            model=MODEL, system=SYSTEM, messages=messages,\n            tools=TOOLS, max_tokens=16000,\n            thinking={\n                \"type\": \"enabled\",\n                \"budget_tokens\": 10000  # 分配给思考的 token 数\n            },\n        )\n        messages.append({\"role\": \"assistant\", \"content\": response.content})\n\n        from formatter import debug_response_messages\n        debug_response_messages(response, messages)\n\n        if response.stop_reason != \"tool_use\":\n            return\n        results = []\n        used_todo = False\n        for block in response.content:\n            if block.type == \"tool_use\":\n                handler = TOOL_HANDLERS.get(block.name)\n                try:\n                    output = handler(**block.input) if handler else f\"Unknown tool: {block.name}\"\n                except Exception as e:\n                    output = f\"Error: {e}\"\n                print(f\"> {block.name}:\")\n                print(str(output)[:200])\n                results.append({\"type\": \"tool_result\", \"tool_use_id\": block.id, \"content\": str(output)})\n                if block.name == \"todo\":\n                    used_todo = True\n        rounds_since_todo = 0 if used_todo else rounds_since_todo + 1\n        if rounds_since_todo >= 3:\n            reminder = get_reminder(rounds_since_todo)\n            if reminder:\n                results.append({\"type\": \"text\", \"text\": reminder})\n        messages.append({\"role\": \"user\", \"content\": results})\n\n\nif __name__ == \"__main__\":\n    history = []\n    while True:\n        try:\n            query = input(\"\\033[36ms03 >> \\033[0m\")\n        except (EOFError, KeyboardInterrupt):\n            break\n        if query.strip().lower() in (\"q\", \"exit\", \"\"):\n            break\n        history.append({\"role\": \"user\", \"content\": query})\n        agent_loop(history)\n        response_content = history[-1][\"content\"]\n        if isinstance(response_content, list):\n            for block in response_content:\n                if hasattr(block, \"text\"):\n                    print(block.text)\n        print()"
+      },
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01YcUg694H1YsNLLnVUBreRM",
+        "content": "#!/usr/bin/env python3\n# Harness: context isolation -- protecting the model's clarity of thought.\n\"\"\"\ns04_subagent.py - Subagents\n\nSpawn a child agent with fresh messages=[]. The child works in its own\ncontext, sharing the filesystem, then returns only a summary to the parent.\n\n    Parent agent                     Subagent\n    +------------------+             +------------------+\n    | messages=[...]   |             | messages=[]      |  <-- fresh\n    |                  |  dispatch   |                  |\n    | tool: task       | ---------->| while tool_use:  |\n    |   prompt=\"...\"   |            |   call tools     |\n    |   description=\"\" |            |   append results |\n    |                  |  summary   |                  |\n    |   result = \"...\" | <--------- | return last text |\n    +------------------+             +------------------+\n              |\n    Parent context stays clean.\n    Subagent context is discarded.\n\nKey insight: \"Process isolation gives context isolation for free.\"\n\"\"\"\n\nimport os\nimport subprocess\nfrom pathlib import Path\n\nfrom anthropic import Anthropic\nfrom dotenv import load_dotenv\n\nload_dotenv(override=True)\n\nif os.getenv(\"ANTHROPIC_BASE_URL\"):\n    os.environ.pop(\"ANTHROPIC_AUTH_TOKEN\", None)\n\nWORKDIR = Path.cwd()\nclient = Anthropic(base_url=os.getenv(\"ANTHROPIC_BASE_URL\"))\nMODEL = os.environ[\"MODEL_ID\"]\n\nSYSTEM = f\"You are a coding agent at {WORKDIR}. Use the task tool to delegate exploration or subtasks.\"\nSUBAGENT_SYSTEM = f\"You are a coding subagent at {WORKDIR}. Complete the given task, then summarize your findings.\"\n\n\n# -- Tool implementations shared by parent and child --\ndef safe_path(p: str) -> Path:\n    path = (WORKDIR / p).resolve()\n    if not path.is_relative_to(WORKDIR):\n        raise ValueError(f\"Path escapes workspace: {p}\")\n    return path\n\ndef run_bash(command: str) -> str:\n    dangerous = [\"rm -rf /\", \"sudo\", \"shutdown\", \"reboot\", \"> /dev/\"]\n    if any(d in command for d in dangerous):\n        return \"Error: Dangerous command blocked\"\n    try:\n        r = subprocess.run(command, shell=True, cwd=WORKDIR,\n                           capture_output=True, text=True, timeout=120)\n        out = (r.stdout + r.stderr).strip()\n        return out[:50000] if out else \"(no output)\"\n    except subprocess.TimeoutExpired:\n        return \"Error: Timeout (120s)\"\n    except (FileNotFoundError, OSError) as e:\n        return f\"Error: {e}\"\n\ndef run_read(path: str, limit: int = None) -> str:\n    try:\n        lines = safe_path(path).read_text().splitlines()\n        if limit and limit < len(lines):\n            lines = lines[:limit] + [f\"... ({len(lines) - limit} more)\"]\n        return \"\\n\".join(lines)[:50000]\n    except Exception as e:\n        return f\"Error: {e}\"\n\ndef run_write(path: str, content: str) -> str:\n    try:\n        fp = safe_path(path)\n        fp.parent.mkdir(parents=True, exist_ok=True)\n        fp.write_text(content)\n        return f\"Wrote {len(content)} bytes\"\n    except Exception as e:\n        return f\"Error: {e}\"\n\ndef run_edit(path: str, old_text: str, new_text: str) -> str:\n    try:\n        fp = safe_path(path)\n        content = fp.read_text()\n        if old_text not in content:\n            return f\"Error: Text not found in {path}\"\n        fp.write_text(content.replace(old_text, new_text, 1))\n        return f\"Edited {path}\"\n    except Exception as e:\n        return f\"Error: {e}\"\n\n\nTOOL_HANDLERS = {\n    \"bash\":       lambda **kw: run_bash(kw[\"command\"]),\n    \"read_file\":  lambda **kw: run_read(kw[\"path\"], kw.get(\"limit\")),\n    \"write_file\": lambda **kw: run_write(kw[\"path\"], kw[\"content\"]),\n    \"edit_file\":  lambda **kw: run_edit(kw[\"path\"], kw[\"old_text\"], kw[\"new_text\"]),\n}\n\n# Child gets all base tools except task (no recursive spawning)\nCHILD_TOOLS = [\n    {\"name\": \"bash\", \"description\": \"Run a shell command.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"command\": {\"type\": \"string\"}}, \"required\": [\"command\"]}},\n    {\"name\": \"read_file\", \"description\": \"Read file contents.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"limit\": {\"type\": \"integer\"}}, \"required\": [\"path\"]}},\n    {\"name\": \"write_file\", \"description\": \"Write content to file.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"content\": {\"type\": \"string\"}}, \"required\": [\"path\", \"content\"]}},\n    {\"name\": \"edit_file\", \"description\": \"Replace exact text in file.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"path\": {\"type\": \"string\"}, \"old_text\": {\"type\": \"string\"}, \"new_text\": {\"type\": \"string\"}}, \"required\": [\"path\", \"old_text\", \"new_text\"]}},\n]\n\n\n# -- Subagent: fresh context, filtered tools, summary-only return --\ndef run_subagent(prompt: str) -> str:\n    sub_messages = [{\"role\": \"user\", \"content\": prompt}]  # fresh context\n    for _ in range(30):  # safety limit\n        response = client.messages.create(\n            model=MODEL, system=SUBAGENT_SYSTEM, messages=sub_messages,\n            tools=CHILD_TOOLS, max_tokens=16000,\n            thinking={\n                \"type\": \"enabled\",\n                \"budget_tokens\": 10000  # 分配给思考的 token 数\n            },\n        )\n        sub_messages.append({\"role\": \"assistant\", \"content\": response.content})\n\n        from formatter import debug_response_messages\n        debug_response_messages(response, sub_messages, env=\"sub\")\n\n        if response.stop_reason != \"tool_use\":\n            break\n        results = []\n        for block in response.content:\n            if block.type == \"tool_use\":\n                handler = TOOL_HANDLERS.get(block.name)\n                output = handler(**block.input) if handler else f\"Unknown tool: {block.name}\"\n                results.append({\"type\": \"tool_result\", \"tool_use_id\": block.id, \"content\": str(output)[:50000]})\n        sub_messages.append({\"role\": \"user\", \"content\": results})\n    # Only the final text returns to the parent -- child context is discarded\n    return \"\".join(b.text for b in response.content if hasattr(b, \"text\")) or \"(no summary)\"\n\n\n# -- Parent tools: base tools + task dispatcher --\nPARENT_TOOLS = CHILD_TOOLS + [\n    {\"name\": \"task\", \"description\": \"Spawn a subagent with fresh context. It shares the filesystem but not conversation history.\",\n     \"input_schema\": {\"type\": \"object\", \"properties\": {\"prompt\": {\"type\": \"string\"}, \"description\": {\"type\": \"string\", \"description\": \"Short description of the task\"}}, \"required\": [\"prompt\"]}},\n]\n\n\ndef agent_loop(messages: list):\n    while True:\n        response = client.messages.create(\n            model=MODEL, system=SYSTEM, messages=messages,\n            tools=PARENT_TOOLS, max_tokens=16000,\n            thinking={\n                \"type\": \"enabled\",\n                \"budget_tokens\": 10000  # 分配给思考的 token 数\n            },\n        )\n        messages.append({\"role\": \"assistant\", \"content\": response.content})\n\n        from formatter import debug_response_messages\n        debug_response_messages(response, messages)\n\n        if response.stop_reason != \"tool_use\":\n            return\n        results = []\n        for block in response.content:\n            if block.type == \"tool_use\":\n                if block.name == \"task\":\n                    desc = block.input.get(\"description\", \"subtask\")\n                    prompt = block.input.get(\"prompt\", \"\")\n                    print(f\"> task ({desc}): {prompt[:80]}\")\n                    output = run_subagent(prompt)\n                else:\n                    handler = TOOL_HANDLERS.get(block.name)\n                    output = handler(**block.input) if handler else f\"Unknown tool: {block.name}\"\n                print(f\"  {str(output)[:200]}\")\n                results.append({\"type\": \"tool_result\", \"tool_use_id\": block.id, \"content\": str(output)})\n        messages.append({\"role\": \"user\", \"content\": results})\n\n\nif __name__ == \"__main__\":\n    history = []\n    while True:\n        try:\n            query = input(\"\\033[36ms04 >> \\033[0m\")\n        except (EOFError, KeyboardInterrupt):\n            break\n        if query.strip().lower() in (\"q\", \"exit\", \"\"):\n            break\n        history.append({\"role\": \"user\", \"content\": query})\n        agent_loop(history)\n        response_content = history[-1][\"content\"]\n        if isinstance(response_content, list):\n            for block in response_content:\n                if hasattr(block, \"text\"):\n                    print(block.text)\n        print()"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "citations": null,
+        "text": "Here is a clear summary of each file:\n\n---\n\n## 📁 File Summaries\n\n---\n\n### `s01_agent_loop.py` — **The Core Agent Loop**\n> *\"The entire secret of an AI coding agent in one pattern.\"*\n\nThis is the **foundation** of the series. It implements the simplest possible agentic loop:\n- **Single tool:** `bash` — runs shell commands via `subprocess`.\n- **The loop:** Repeatedly calls the Anthropic LLM (`claude`), appends its response to a message history, executes any `bash` tool calls it makes, feeds the results back in, and repeats — **until the model stops requesting tools**.\n- **Safety:** Blocks a small set of dangerous commands (e.g., `rm -rf /`, `sudo`).\n- **Interface:** An interactive REPL (`s01 >>`) where users type tasks and the agent autonomously executes shell commands to solve them.\n\n**Key Insight:** The entire agent pattern is a `while stop_reason == \"tool_use\":` loop.\n\n---\n\n### `s02_tool_use.py` — **Expanded Tool Dispatch**\n> *\"The loop didn't change at all. I just added tools.\"*\n\nBuilds directly on `s01` by **adding more tools** while keeping the same loop structure:\n- **Four tools:** `bash`, `read_file`, `write_file`, `edit_file` — giving the agent full file system access (reading, writing, and surgical text replacement).\n- **Tool Dispatch Map:** Introduces a `TOOL_HANDLERS` dictionary `{tool_name: handler_fn}` to cleanly route any tool call the model makes to the correct Python function.\n- **Workspace safety:** A `safe_path()` guard ensures all file operations stay within the working directory (no path traversal).\n- **Interface:** Same interactive REPL pattern (`s02 >>`).\n\n**Key Insight:** Expanding agent capability is purely additive — add a handler function, add the tool schema to the list, done. The loop is untouched.\n\n---\n\n### `s03_todo_write.py` — **Self-Tracking with TodoWrite**\n> *\"The agent can track its own progress — and I can see it.\"*\n\nBuilds on `s02` by adding a **planning/progress-tracking layer**:\n- **New `todo` tool:** The LLM writes and updates a structured task list (`TodoManager`) with statuses: `pending`, `in_progress`, and `completed`. Only one task can be `in_progress` at a time (enforced by validation).\n- **Nag Reminder Injection:** If the model goes **3+ rounds without updating its todos**, a `<reminder>` message is automatically injected into the next tool result, escalating in urgency over time. This keeps the agent on track for long, multi-step tasks.\n- **Extended Thinking:** Enables Anthropic's \"thinking\" feature (`budget_tokens: 10000`) to let the model reason more deeply before acting.\n- **Interface:** Same REPL pattern (`s03 >>`).\n\n**Key Insight:** The agent can maintain observable, structured state about its own plan — and the harness can nudge it back on track when it drifts.\n\n---\n\n### `s04_subagent.py` — **Subagent / Context Isolation**\n> *\"Process isolation gives context isolation for free.\"*\n\nThe most advanced pattern, introducing **parent/child agent delegation**:\n- **New `task` tool (parent only):** The parent agent can spawn a **subagent** by calling `task(prompt=..., description=...)`. The subagent runs in a completely **fresh message history** (`messages=[]`), does its work (using all base tools), and returns only a **text summary** to the parent.\n- **Context isolation:** The subagent's full tool-call history and intermediate steps are **discarded** after it finishes — only the final summary bubbles back up. This prevents the parent's context from being polluted by a subagent's verbose working.\n- **Shared filesystem:** Both parent and child operate on the same working directory, so the subagent's file changes are visible to the parent.\n- **No recursive spawning:** The child does NOT have the `task` tool, preventing infinite agent nesting.\n- **Safety limit:** The subagent loop caps at 30 iterations.\n\n**Key Insight:** Delegating work to a subagent with a clean context window keeps the parent focused and prevents context bloat on long, complex tasks.\n\n---\n\n## 🔁 Progression Summary\n\n| File | Core Concept | New Addition |\n|---|---|---|\n| `s01` | Agent Loop | `bash` tool + `while tool_use` loop |\n| `s02` | Tool Dispatch | `read_file`, `write_file`, `edit_file` + dispatch map |\n| `s03` | Planning | `todo` tool + nag reminder injection |\n| `s04` | Subagents | `task` tool + fresh-context child agents |\n\nEach file is a **self-contained, runnable learning step**, building one concept at a time on top of the last, forming a complete curriculum for understanding how production AI coding agents are structured.",
+        "type": "text"
+      }
+    ]
+  }
+]
+`sub`==================================================
+
+
+  Here is a clear summary of each file:
+
+---
+
+## 📁 File Summaries
+
+---
+
+### `s01_agent_loop.py` — **The Core Agent Loop**
+> *"The entire secret of an AI coding agent in one pattern."*
+
+This is the **fou
+
+
+`main` response start**************************************************
+Message(id='msg_01XswgxzHbPkurMfZUjPB3dZ', container=None, content=[TextBlock(citations=None, text='Here\'s the full summary of all matching `.py` files in the `agents/` directory:\n\n---\n\n## 📁 `agents/` — Python Files Summary (`s01_` → `s04_`)\n\n---\n\n### `s01_agent_loop.py` — **The Core Agent Loop**\nThe simplest possible agentic loop. It has a **single `bash` tool** that runs shell commands. The agent repeatedly calls Claude, appends responses to a message history, executes any tool calls, and feeds results back — **looping until the model stops requesting tools**. Includes a small safety blocklist for dangerous commands. Entry point is an interactive REPL (`s01 >>`).\n\n> **Key concept:** The entire agent pattern is a `while stop_reason == "tool_use":` loop.\n\n---\n\n### `s02_tool_use.py` — **Expanded Tool Dispatch**\nBuilds on `s01` by **adding more tools** — `bash`, `read_file`, `write_file`, and `edit_file` — giving the agent full filesystem access. Introduces a `TOOL_HANDLERS` dictionary to cleanly route tool calls to the right handler. A `safe_path()` guard prevents path traversal outside the working directory. The loop itself is **unchanged**.\n\n> **Key concept:** Expanding agent capability is purely additive — the loop never changes.\n\n---\n\n### `s03_todo_write.py` — **Self-Tracking with TodoWrite**\nAdds a **planning/progress-tracking layer** via a new `todo` tool backed by a `TodoManager` class. Tasks have statuses (`pending`, `in_progress`, `completed`) with a rule that only one task can be `in_progress` at a time. A **nag reminder** is injected into tool results if the agent goes 3+ rounds without updating its todos, escalating in urgency. Also enables Anthropic\'s **extended thinking** (`budget_tokens: 10000`).\n\n> **Key concept:** The agent maintains structured, observable state about its own plan.\n\n---\n\n### `s04_subagent.py` — **Subagent / Context Isolation**\nThe most advanced pattern — introduces a **parent/child delegation model**. The parent agent has a `task` tool to spawn a **subagent** with a completely fresh message history. The subagent does its work, and only its **text summary** is returned to the parent (all intermediate steps are discarded). The child does NOT have the `task` tool (no recursive nesting), and the subagent loop is capped at 30 iterations. Both share the same filesystem.\n\n> **Key concept:** Process isolation = context isolation. Delegating to a subagent prevents parent context bloat.\n\n---\n\n### 🔁 Progression at a Glance\n\n| File | Core Concept | What\'s New |\n|------|-------------|------------|\n| `s01` | Agent Loop | `bash` tool + `while tool_use` loop |\n| `s02` | Tool Dispatch | File tools + dispatch map |\n| `s03` | Planning | `todo` tool + nag reminders + extended thinking |\n| `s04` | Subagents | `task` tool + fresh-context child agents |\n\nEach file is a **self-contained, runnable step** in a curriculum for understanding how production AI coding agents are built — one concept layered at a time.', type='text')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=2388, output_tokens=780, server_tool_use=None, service_tier='standard'))
+`main` response end**************************************************
+
+
+`main`==================================================
+[
+  {
+    "role": "user",
+    "content": "Delegate: read all .py files in directory agents and file name start in [s01_, s02_, s03_, s04] and summarize what each one does"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EvcCClsIDBgCKkAQ4rDVjR9uVUONtEUU4Gi3qOmSEi7F5fQP5UtBG/QUGOirk7pXtxaI1y1MLH4MznjjWuqW+Kpy1CgOxVSyfVaLMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgyfS4btGxDqSJC6a+8aDCLqhLFubtzkWD1nTSIwvLL7Mgumpn0tkVahQQ0g7NSz22E50L8a63852UhdDUEDtRlHzYy5063Q5bCVrLE5KskBg+tze5dySn7dTZmJL9r4W9bE5U4gLJjmIH25ZoKzY2Uyf+4tC83lNTy6CcYPJMPReXhKO0DgoAlHuBMeTLxzrMB7IuUSNicSQw4Oj1lcP3Cuzu/IF0rnsKavnFw6KmDE6+8PHJFtqJn1KPuAGJ6TOzLRH26SXbWhbLyhWpjYvGB7YNxLj6gh9e4XWMmrxFdfPfhaaeScFg+1mYQ4trelOQOGS/B4xARIaJwNi20asTO/6e96S7zwZnD0JIHkh8wQgD+sWD9PwrDLGAE=",
+        "thinking": "The user wants me to delegate a task to read all .py files in the `agents` directory where the file names start with `s01_`, `s02_`, `s03_`, or `s04_`, and summarize what each one does.",
+        "type": "thinking"
+      },
+      {
+        "id": "toolu_01MD2PTwcUTjo15Z62tMoEUa",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "description": "Read and summarize .py files in agents/ directory starting with s01_, s02_, s03_, s04_",
+          "prompt": "Go to the directory /Users/nickmyb/Codes/learn-claude-code/agents and find all .py files whose names start with s01_, s02_, s03_, or s04_. Read each file and provide a clear summary of what each one does."
+        },
+        "name": "task",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01MD2PTwcUTjo15Z62tMoEUa",
+        "content": "Here is a clear summary of each file:\n\n---\n\n## 📁 File Summaries\n\n---\n\n### `s01_agent_loop.py` — **The Core Agent Loop**\n> *\"The entire secret of an AI coding agent in one pattern.\"*\n\nThis is the **foundation** of the series. It implements the simplest possible agentic loop:\n- **Single tool:** `bash` — runs shell commands via `subprocess`.\n- **The loop:** Repeatedly calls the Anthropic LLM (`claude`), appends its response to a message history, executes any `bash` tool calls it makes, feeds the results back in, and repeats — **until the model stops requesting tools**.\n- **Safety:** Blocks a small set of dangerous commands (e.g., `rm -rf /`, `sudo`).\n- **Interface:** An interactive REPL (`s01 >>`) where users type tasks and the agent autonomously executes shell commands to solve them.\n\n**Key Insight:** The entire agent pattern is a `while stop_reason == \"tool_use\":` loop.\n\n---\n\n### `s02_tool_use.py` — **Expanded Tool Dispatch**\n> *\"The loop didn't change at all. I just added tools.\"*\n\nBuilds directly on `s01` by **adding more tools** while keeping the same loop structure:\n- **Four tools:** `bash`, `read_file`, `write_file`, `edit_file` — giving the agent full file system access (reading, writing, and surgical text replacement).\n- **Tool Dispatch Map:** Introduces a `TOOL_HANDLERS` dictionary `{tool_name: handler_fn}` to cleanly route any tool call the model makes to the correct Python function.\n- **Workspace safety:** A `safe_path()` guard ensures all file operations stay within the working directory (no path traversal).\n- **Interface:** Same interactive REPL pattern (`s02 >>`).\n\n**Key Insight:** Expanding agent capability is purely additive — add a handler function, add the tool schema to the list, done. The loop is untouched.\n\n---\n\n### `s03_todo_write.py` — **Self-Tracking with TodoWrite**\n> *\"The agent can track its own progress — and I can see it.\"*\n\nBuilds on `s02` by adding a **planning/progress-tracking layer**:\n- **New `todo` tool:** The LLM writes and updates a structured task list (`TodoManager`) with statuses: `pending`, `in_progress`, and `completed`. Only one task can be `in_progress` at a time (enforced by validation).\n- **Nag Reminder Injection:** If the model goes **3+ rounds without updating its todos**, a `<reminder>` message is automatically injected into the next tool result, escalating in urgency over time. This keeps the agent on track for long, multi-step tasks.\n- **Extended Thinking:** Enables Anthropic's \"thinking\" feature (`budget_tokens: 10000`) to let the model reason more deeply before acting.\n- **Interface:** Same REPL pattern (`s03 >>`).\n\n**Key Insight:** The agent can maintain observable, structured state about its own plan — and the harness can nudge it back on track when it drifts.\n\n---\n\n### `s04_subagent.py` — **Subagent / Context Isolation**\n> *\"Process isolation gives context isolation for free.\"*\n\nThe most advanced pattern, introducing **parent/child agent delegation**:\n- **New `task` tool (parent only):** The parent agent can spawn a **subagent** by calling `task(prompt=..., description=...)`. The subagent runs in a completely **fresh message history** (`messages=[]`), does its work (using all base tools), and returns only a **text summary** to the parent.\n- **Context isolation:** The subagent's full tool-call history and intermediate steps are **discarded** after it finishes — only the final summary bubbles back up. This prevents the parent's context from being polluted by a subagent's verbose working.\n- **Shared filesystem:** Both parent and child operate on the same working directory, so the subagent's file changes are visible to the parent.\n- **No recursive spawning:** The child does NOT have the `task` tool, preventing infinite agent nesting.\n- **Safety limit:** The subagent loop caps at 30 iterations.\n\n**Key Insight:** Delegating work to a subagent with a clean context window keeps the parent focused and prevents context bloat on long, complex tasks.\n\n---\n\n## 🔁 Progression Summary\n\n| File | Core Concept | New Addition |\n|---|---|---|\n| `s01` | Agent Loop | `bash` tool + `while tool_use` loop |\n| `s02` | Tool Dispatch | `read_file`, `write_file`, `edit_file` + dispatch map |\n| `s03` | Planning | `todo` tool + nag reminder injection |\n| `s04` | Subagents | `task` tool + fresh-context child agents |\n\nEach file is a **self-contained, runnable learning step**, building one concept at a time on top of the last, forming a complete curriculum for understanding how production AI coding agents are structured."
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "citations": null,
+        "text": "Here's the full summary of all matching `.py` files in the `agents/` directory:\n\n---\n\n## 📁 `agents/` — Python Files Summary (`s01_` → `s04_`)\n\n---\n\n### `s01_agent_loop.py` — **The Core Agent Loop**\nThe simplest possible agentic loop. It has a **single `bash` tool** that runs shell commands. The agent repeatedly calls Claude, appends responses to a message history, executes any tool calls, and feeds results back — **looping until the model stops requesting tools**. Includes a small safety blocklist for dangerous commands. Entry point is an interactive REPL (`s01 >>`).\n\n> **Key concept:** The entire agent pattern is a `while stop_reason == \"tool_use\":` loop.\n\n---\n\n### `s02_tool_use.py` — **Expanded Tool Dispatch**\nBuilds on `s01` by **adding more tools** — `bash`, `read_file`, `write_file`, and `edit_file` — giving the agent full filesystem access. Introduces a `TOOL_HANDLERS` dictionary to cleanly route tool calls to the right handler. A `safe_path()` guard prevents path traversal outside the working directory. The loop itself is **unchanged**.\n\n> **Key concept:** Expanding agent capability is purely additive — the loop never changes.\n\n---\n\n### `s03_todo_write.py` — **Self-Tracking with TodoWrite**\nAdds a **planning/progress-tracking layer** via a new `todo` tool backed by a `TodoManager` class. Tasks have statuses (`pending`, `in_progress`, `completed`) with a rule that only one task can be `in_progress` at a time. A **nag reminder** is injected into tool results if the agent goes 3+ rounds without updating its todos, escalating in urgency. Also enables Anthropic's **extended thinking** (`budget_tokens: 10000`).\n\n> **Key concept:** The agent maintains structured, observable state about its own plan.\n\n---\n\n### `s04_subagent.py` — **Subagent / Context Isolation**\nThe most advanced pattern — introduces a **parent/child delegation model**. The parent agent has a `task` tool to spawn a **subagent** with a completely fresh message history. The subagent does its work, and only its **text summary** is returned to the parent (all intermediate steps are discarded). The child does NOT have the `task` tool (no recursive nesting), and the subagent loop is capped at 30 iterations. Both share the same filesystem.\n\n> **Key concept:** Process isolation = context isolation. Delegating to a subagent prevents parent context bloat.\n\n---\n\n### 🔁 Progression at a Glance\n\n| File | Core Concept | What's New |\n|------|-------------|------------|\n| `s01` | Agent Loop | `bash` tool + `while tool_use` loop |\n| `s02` | Tool Dispatch | File tools + dispatch map |\n| `s03` | Planning | `todo` tool + nag reminders + extended thinking |\n| `s04` | Subagents | `task` tool + fresh-context child agents |\n\nEach file is a **self-contained, runnable step** in a curriculum for understanding how production AI coding agents are built — one concept layered at a time.",
+        "type": "text"
+      }
+    ]
+  }
+]
+`main`==================================================
+
+
+Here's the full summary of all matching `.py` files in the `agents/` directory:
+
+---
+
+## 📁 `agents/` — Python Files Summary (`s01_` → `s04_`)
+
+---
+
+### `s01_agent_loop.py` — **The Core Agent Loop**
+The simplest possible agentic loop. It has a **single `bash` tool** that runs shell commands. The agent repeatedly calls Claude, appends responses to a message history, executes any tool calls, and feeds results back — **looping until the model stops requesting tools**. Includes a small safety blocklist for dangerous commands. Entry point is an interactive REPL (`s01 >>`).
+
+> **Key concept:** The entire agent pattern is a `while stop_reason == "tool_use":` loop.
+
+---
+
+### `s02_tool_use.py` — **Expanded Tool Dispatch**
+Builds on `s01` by **adding more tools** — `bash`, `read_file`, `write_file`, and `edit_file` — giving the agent full filesystem access. Introduces a `TOOL_HANDLERS` dictionary to cleanly route tool calls to the right handler. A `safe_path()` guard prevents path traversal outside the working directory. The loop itself is **unchanged**.
+
+> **Key concept:** Expanding agent capability is purely additive — the loop never changes.
+
+---
+
+### `s03_todo_write.py` — **Self-Tracking with TodoWrite**
+Adds a **planning/progress-tracking layer** via a new `todo` tool backed by a `TodoManager` class. Tasks have statuses (`pending`, `in_progress`, `completed`) with a rule that only one task can be `in_progress` at a time. A **nag reminder** is injected into tool results if the agent goes 3+ rounds without updating its todos, escalating in urgency. Also enables Anthropic's **extended thinking** (`budget_tokens: 10000`).
+
+> **Key concept:** The agent maintains structured, observable state about its own plan.
+
+---
+
+### `s04_subagent.py` — **Subagent / Context Isolation**
+The most advanced pattern — introduces a **parent/child delegation model**. The parent agent has a `task` tool to spawn a **subagent** with a completely fresh message history. The subagent does its work, and only its **text summary** is returned to the parent (all intermediate steps are discarded). The child does NOT have the `task` tool (no recursive nesting), and the subagent loop is capped at 30 iterations. Both share the same filesystem.
+
+> **Key concept:** Process isolation = context isolation. Delegating to a subagent prevents parent context bloat.
+
+---
+
+### 🔁 Progression at a Glance
+
+| File | Core Concept | What's New |
+|------|-------------|------------|
+| `s01` | Agent Loop | `bash` tool + `while tool_use` loop |
+| `s02` | Tool Dispatch | File tools + dispatch map |
+| `s03` | Planning | `todo` tool + nag reminders + extended thinking |
+| `s04` | Subagents | `task` tool + fresh-context child agents |
+
+Each file is a **self-contained, runnable step** in a curriculum for understanding how production AI coding agents are built — one concept layered at a time.
+
+s04 >> 

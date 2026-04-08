@@ -76,20 +76,20 @@ def debug_messages(messages):
                         print(f"  📥 TOOL_RESULT: {block.get('content', '')[:100]}...")
 
 
-def debug_response_messages(response, messages):
+def debug_response_messages(response, messages, env="main"):
     print()
     print()
 
-    print("response start" + "*"*50)
+    print(f"`{env}` response start" + "*"*50)
     print(response)
-    print("response end" + "*"*50)
+    print(f"`{env}` response end" + "*"*50)
 
     print()
     print()
 
-    print("="*50)
+    print(f"`{env}`" + "="*50)
     print_messages(messages)
-    print("="*50)
+    print(f"`{env}`" + "="*50)
 
     print()
     print()
