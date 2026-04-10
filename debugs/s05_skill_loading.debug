@@ -1,0 +1,274 @@
+/Users/nickmyb/.local/bin/uv run /Users/nickmyb/Codes/learn-claude-code/.venv/bin/python /Users/nickmyb/Codes/learn-claude-code/agents/s05_skill_loading.py
+s05 >> What skills are available?
+
+
+`main` response start**************************************************
+Message(id='msg_01QDQv5WcsXQCJn3SXoN1x5Y', container=None, content=[ThinkingBlock(signature='Eq4CClsIDBgCKkALtdtY7qZgv6+BPBEuFRIOATI+0kPUHgGwzB7SIM1bp/+pz8DjpjliSjunh4Bh/+QZiJ1NZ6t7auHOrmnKfvlfMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxNPK86mXAFM3k14FAaDKrzoAXen1swxuK3JyIwW1AaT8mJ2zPPn7a/VYBjyjyfvSjYHRgwp4rQBdWUgSlepRHPbSFzvP64t3/cuZgrKoABROwbyhzUUFXUui6Aek0JBlbPnSsGtHFwf4T6J5J9qh3VOg515+WVbA14fmJtvt7UIjnRSXSUAGWHgMwdfAaVs8gv70BVQ1tEC7xBqZ6tBAutCGnNZGLoQBU64DddWTbJihtcJZIfAY5yZNd0HgmTEcpwIiAHoKqAF22TCJ9yGQ4YAQ==', thinking='The user wants to know what skills are available. I can see the list of available skills from the system prompt.', type='thinking'), TextBlock(citations=None, text="Based on the system prompt, here are the **4 skills** currently available:\n\n| Skill | Description | Use When... |\n|-------|-------------|-------------|\n| 🤖 **agent-builder** | Design and build AI agents for any domain | You want to create agents, assistants, or autonomous AI systems; understand agent architecture, agentic patterns, tool use, orchestration, or ask about tools like Claude Code/Cursor |\n| 🔍 **code-review** | Thorough code reviews with security, performance, and maintainability analysis | You want to review code, check for bugs, or audit a codebase |\n| 🔌 **mcp-builder** | Build MCP (Model Context Protocol) servers | You want to create an MCP server, add tools to Claude, or integrate external services |\n| 📄 **pdf** | Process PDF files | You need to read a PDF, create a PDF, or work with PDF documents (extract text, merge, etc.) |\n\nEach skill provides specialized knowledge that I can load on-demand to better assist you. Just ask about any of these topics and I'll load the relevant skill automatically! 🚀", type='text')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=1166, output_tokens=298, server_tool_use=None, service_tier='standard'))
+`main` response end**************************************************
+
+
+`main`==================================================
+[
+  {
+    "role": "user",
+    "content": "What skills are available?"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "Eq4CClsIDBgCKkALtdtY7qZgv6+BPBEuFRIOATI+0kPUHgGwzB7SIM1bp/+pz8DjpjliSjunh4Bh/+QZiJ1NZ6t7auHOrmnKfvlfMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxNPK86mXAFM3k14FAaDKrzoAXen1swxuK3JyIwW1AaT8mJ2zPPn7a/VYBjyjyfvSjYHRgwp4rQBdWUgSlepRHPbSFzvP64t3/cuZgrKoABROwbyhzUUFXUui6Aek0JBlbPnSsGtHFwf4T6J5J9qh3VOg515+WVbA14fmJtvt7UIjnRSXSUAGWHgMwdfAaVs8gv70BVQ1tEC7xBqZ6tBAutCGnNZGLoQBU64DddWTbJihtcJZIfAY5yZNd0HgmTEcpwIiAHoKqAF22TCJ9yGQ4YAQ==",
+        "thinking": "The user wants to know what skills are available. I can see the list of available skills from the system prompt.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Based on the system prompt, here are the **4 skills** currently available:\n\n| Skill | Description | Use When... |\n|-------|-------------|-------------|\n| 🤖 **agent-builder** | Design and build AI agents for any domain | You want to create agents, assistants, or autonomous AI systems; understand agent architecture, agentic patterns, tool use, orchestration, or ask about tools like Claude Code/Cursor |\n| 🔍 **code-review** | Thorough code reviews with security, performance, and maintainability analysis | You want to review code, check for bugs, or audit a codebase |\n| 🔌 **mcp-builder** | Build MCP (Model Context Protocol) servers | You want to create an MCP server, add tools to Claude, or integrate external services |\n| 📄 **pdf** | Process PDF files | You need to read a PDF, create a PDF, or work with PDF documents (extract text, merge, etc.) |\n\nEach skill provides specialized knowledge that I can load on-demand to better assist you. Just ask about any of these topics and I'll load the relevant skill automatically! 🚀",
+        "type": "text"
+      }
+    ]
+  }
+]
+`main`==================================================
+
+
+Based on the system prompt, here are the **4 skills** currently available:
+
+| Skill | Description | Use When... |
+|-------|-------------|-------------|
+| 🤖 **agent-builder** | Design and build AI agents for any domain | You want to create agents, assistants, or autonomous AI systems; understand agent architecture, agentic patterns, tool use, orchestration, or ask about tools like Claude Code/Cursor |
+| 🔍 **code-review** | Thorough code reviews with security, performance, and maintainability analysis | You want to review code, check for bugs, or audit a codebase |
+| 🔌 **mcp-builder** | Build MCP (Model Context Protocol) servers | You want to create an MCP server, add tools to Claude, or integrate external services |
+| 📄 **pdf** | Process PDF files | You need to read a PDF, create a PDF, or work with PDF documents (extract text, merge, etc.) |
+
+Each skill provides specialized knowledge that I can load on-demand to better assist you. Just ask about any of these topics and I'll load the relevant skill automatically! 🚀
+
+s05 >> i want to know the SOP of the agent-builder skill, please help me summary it.
+
+
+`main` response start**************************************************
+Message(id='msg_01QDYXqkGeo3DVNCqVuXA3qb', container=None, content=[ThinkingBlock(signature='EqwCClsIDBgCKkB4sACNw7VWRS9+8LaB4GA1kSfgkCxMngphWqAvLtQHZMHZ939R++jfiOX9sR8TRtoGxASbhschANKBqfg5gGliMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxiVr1YklLBlYeopCEaDHsQzIWsqyIJS3MHDiIwO1jBk4sINS3pGwRSeJJytNgUWQHcouNopjmGmJ80yPs07KBF37o0speljxBVhqR9Kn+LppcEYDvO9RMTR0HPg69W52PDUVlpwuwcRLiMoTpbdph5hhXdr+xW4puuyZvseEpOiHZucOjHXXBKRT8yszFFw2xOLg0OYOUarBswv9uKYsSXCw5uclQGnx7bcv5sPNlYbeCqkn+ipGAdkoUIPA/7AOMBtvrFzmhtgYCD5TKMGAE=', thinking='The user wants to know the SOP (Standard Operating Procedure) of the agent-builder skill. Let me load it first.', type='thinking'), TextBlock(citations=None, text='Sure! Let me load the agent-builder skill first!', type='text'), ToolUseBlock(id='toolu_019eArmkJJ3Efhmb6zhfkmdu', caller=DirectCaller(type='direct'), input={'name': 'agent-builder'}, name='load_skill', type='tool_use')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='tool_use', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=1494, output_tokens=103, server_tool_use=None, service_tier='standard'))
+`main` response end**************************************************
+
+
+`main`==================================================
+[
+  {
+    "role": "user",
+    "content": "What skills are available?"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "Eq4CClsIDBgCKkALtdtY7qZgv6+BPBEuFRIOATI+0kPUHgGwzB7SIM1bp/+pz8DjpjliSjunh4Bh/+QZiJ1NZ6t7auHOrmnKfvlfMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxNPK86mXAFM3k14FAaDKrzoAXen1swxuK3JyIwW1AaT8mJ2zPPn7a/VYBjyjyfvSjYHRgwp4rQBdWUgSlepRHPbSFzvP64t3/cuZgrKoABROwbyhzUUFXUui6Aek0JBlbPnSsGtHFwf4T6J5J9qh3VOg515+WVbA14fmJtvt7UIjnRSXSUAGWHgMwdfAaVs8gv70BVQ1tEC7xBqZ6tBAutCGnNZGLoQBU64DddWTbJihtcJZIfAY5yZNd0HgmTEcpwIiAHoKqAF22TCJ9yGQ4YAQ==",
+        "thinking": "The user wants to know what skills are available. I can see the list of available skills from the system prompt.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Based on the system prompt, here are the **4 skills** currently available:\n\n| Skill | Description | Use When... |\n|-------|-------------|-------------|\n| 🤖 **agent-builder** | Design and build AI agents for any domain | You want to create agents, assistants, or autonomous AI systems; understand agent architecture, agentic patterns, tool use, orchestration, or ask about tools like Claude Code/Cursor |\n| 🔍 **code-review** | Thorough code reviews with security, performance, and maintainability analysis | You want to review code, check for bugs, or audit a codebase |\n| 🔌 **mcp-builder** | Build MCP (Model Context Protocol) servers | You want to create an MCP server, add tools to Claude, or integrate external services |\n| 📄 **pdf** | Process PDF files | You need to read a PDF, create a PDF, or work with PDF documents (extract text, merge, etc.) |\n\nEach skill provides specialized knowledge that I can load on-demand to better assist you. Just ask about any of these topics and I'll load the relevant skill automatically! 🚀",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": "i want to know the SOP of the agent-builder skill, please help me summary it."
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EqwCClsIDBgCKkB4sACNw7VWRS9+8LaB4GA1kSfgkCxMngphWqAvLtQHZMHZ939R++jfiOX9sR8TRtoGxASbhschANKBqfg5gGliMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxiVr1YklLBlYeopCEaDHsQzIWsqyIJS3MHDiIwO1jBk4sINS3pGwRSeJJytNgUWQHcouNopjmGmJ80yPs07KBF37o0speljxBVhqR9Kn+LppcEYDvO9RMTR0HPg69W52PDUVlpwuwcRLiMoTpbdph5hhXdr+xW4puuyZvseEpOiHZucOjHXXBKRT8yszFFw2xOLg0OYOUarBswv9uKYsSXCw5uclQGnx7bcv5sPNlYbeCqkn+ipGAdkoUIPA/7AOMBtvrFzmhtgYCD5TKMGAE=",
+        "thinking": "The user wants to know the SOP (Standard Operating Procedure) of the agent-builder skill. Let me load it first.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Sure! Let me load the agent-builder skill first!",
+        "type": "text"
+      },
+      {
+        "id": "toolu_019eArmkJJ3Efhmb6zhfkmdu",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "name": "agent-builder"
+        },
+        "name": "load_skill",
+        "type": "tool_use"
+      }
+    ]
+  }
+]
+`main`==================================================
+
+
+> load_skill:
+<skill name="agent-builder">
+# Agent Builder
+
+Build AI agents for any domain - customer service, research, operations, creative work, or specialized business processes.
+
+## The Core Philosophy
+
+> **Th
+
+
+`main` response start**************************************************
+Message(id='msg_0127zWmSy2NmV1Nom7CALMu5', container=None, content=[TextBlock(citations=None, text='Here\'s a summary of the **Agent Builder SOP**:\n\n---\n\n## 🤖 Agent Builder — SOP Summary\n\n### 🧠 Core Philosophy\n> **"The model already knows how to be an agent. Your job is to get out of the way."**\n\nAn agent is simply a loop:\n1. Model sees **context + capabilities**\n2. Model decides to **act or respond**\n3. If act → execute, add result, repeat; If respond → return to user\n\n---\n\n### 🔩 Three Core Elements\n| Element | What It Is | Design Principle |\n|--------|-----------|-----------------|\n| **Capabilities** | Atomic actions (search, read, create, send...) | Start with **3–5 only**; add more when failures demand it |\n| **Knowledge** | Domain expertise (policies, workflows, schemas) | Load **on-demand**, not upfront |\n| **Context** | Conversation history | Keep it **clean & clear**; isolate noisy subtasks |\n\n---\n\n### 📐 Design Thinking (Before Building)\nAsk yourself:\n- **Purpose** — What should the agent accomplish?\n- **Domain** — What world does it operate in?\n- **Capabilities** — What 3–5 actions are essential?\n- **Knowledge** — What expertise does it need?\n- **Trust** — What decisions can you delegate to the model?\n\n---\n\n### 📈 Progressive Complexity (Start Simple!)\n| Level | Add | Only When... |\n|-------|-----|-------------|\n| **Basic** | 3–5 capabilities | Always start here |\n| **Planning** | Progress tracking | Multi-step tasks lose coherence |\n| **Subagents** | Isolated child agents | Exploration pollutes context |\n| **Skills** | On-demand knowledge | Domain expertise is needed |\n\n> ⚠️ **Most agents never need to go beyond Level 2.**\n\n---\n\n### ✅ Key Principles\n1. **The model IS the agent** — code just runs the loop\n2. **Capabilities enable** — what it *can* do\n3. **Knowledge informs** — what it *knows* how to do\n4. **Constraints focus** — limits create clarity\n5. **Trust liberates** — let the model reason\n6. **Iteration reveals** — start minimal, evolve from real usage\n\n---\n\n### 🚫 Anti-Patterns to Avoid\n| Anti-Pattern | Problem | Fix |\n|---|---|---|\n| Over-engineering | Complexity before need | Start simple |\n| Too many capabilities | Model confusion | Stick to 3–5 |\n| Rigid workflows | Can\'t adapt | Let model decide |\n| Front-loaded knowledge | Context bloat | Load on-demand |\n| Micromanagement | Undercuts intelligence | Trust the model |\n\n---\n\n### 💡 The Agent Mindset Shift\n- ❌ *"How do I make the system do X?"*\n- ✅ *"How do I **enable the model** to do X?"*\n\nThe best agent code is almost **boring** — simple loops, clear capabilities, clean context. **The magic is in the model, not the code.**', type='text')], model='claude-sonnet-4-6', role='assistant', stop_details=None, stop_reason='end_turn', stop_sequence=None, type='message', usage=Usage(cache_creation=CacheCreation(ephemeral_1h_input_tokens=0, ephemeral_5m_input_tokens=0), cache_creation_input_tokens=0, cache_read_input_tokens=0, inference_geo='global', input_tokens=2640, output_tokens=741, server_tool_use=None, service_tier='standard'))
+`main` response end**************************************************
+
+
+`main`==================================================
+[
+  {
+    "role": "user",
+    "content": "What skills are available?"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "Eq4CClsIDBgCKkALtdtY7qZgv6+BPBEuFRIOATI+0kPUHgGwzB7SIM1bp/+pz8DjpjliSjunh4Bh/+QZiJ1NZ6t7auHOrmnKfvlfMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxNPK86mXAFM3k14FAaDKrzoAXen1swxuK3JyIwW1AaT8mJ2zPPn7a/VYBjyjyfvSjYHRgwp4rQBdWUgSlepRHPbSFzvP64t3/cuZgrKoABROwbyhzUUFXUui6Aek0JBlbPnSsGtHFwf4T6J5J9qh3VOg515+WVbA14fmJtvt7UIjnRSXSUAGWHgMwdfAaVs8gv70BVQ1tEC7xBqZ6tBAutCGnNZGLoQBU64DddWTbJihtcJZIfAY5yZNd0HgmTEcpwIiAHoKqAF22TCJ9yGQ4YAQ==",
+        "thinking": "The user wants to know what skills are available. I can see the list of available skills from the system prompt.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Based on the system prompt, here are the **4 skills** currently available:\n\n| Skill | Description | Use When... |\n|-------|-------------|-------------|\n| 🤖 **agent-builder** | Design and build AI agents for any domain | You want to create agents, assistants, or autonomous AI systems; understand agent architecture, agentic patterns, tool use, orchestration, or ask about tools like Claude Code/Cursor |\n| 🔍 **code-review** | Thorough code reviews with security, performance, and maintainability analysis | You want to review code, check for bugs, or audit a codebase |\n| 🔌 **mcp-builder** | Build MCP (Model Context Protocol) servers | You want to create an MCP server, add tools to Claude, or integrate external services |\n| 📄 **pdf** | Process PDF files | You need to read a PDF, create a PDF, or work with PDF documents (extract text, merge, etc.) |\n\nEach skill provides specialized knowledge that I can load on-demand to better assist you. Just ask about any of these topics and I'll load the relevant skill automatically! 🚀",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": "i want to know the SOP of the agent-builder skill, please help me summary it."
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "signature": "EqwCClsIDBgCKkB4sACNw7VWRS9+8LaB4GA1kSfgkCxMngphWqAvLtQHZMHZ939R++jfiOX9sR8TRtoGxASbhschANKBqfg5gGliMhFjbGF1ZGUtc29ubmV0LTQtNjgAEgxiVr1YklLBlYeopCEaDHsQzIWsqyIJS3MHDiIwO1jBk4sINS3pGwRSeJJytNgUWQHcouNopjmGmJ80yPs07KBF37o0speljxBVhqR9Kn+LppcEYDvO9RMTR0HPg69W52PDUVlpwuwcRLiMoTpbdph5hhXdr+xW4puuyZvseEpOiHZucOjHXXBKRT8yszFFw2xOLg0OYOUarBswv9uKYsSXCw5uclQGnx7bcv5sPNlYbeCqkn+ipGAdkoUIPA/7AOMBtvrFzmhtgYCD5TKMGAE=",
+        "thinking": "The user wants to know the SOP (Standard Operating Procedure) of the agent-builder skill. Let me load it first.",
+        "type": "thinking"
+      },
+      {
+        "citations": null,
+        "text": "Sure! Let me load the agent-builder skill first!",
+        "type": "text"
+      },
+      {
+        "id": "toolu_019eArmkJJ3Efhmb6zhfkmdu",
+        "caller": {
+          "type": "direct"
+        },
+        "input": {
+          "name": "agent-builder"
+        },
+        "name": "load_skill",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_019eArmkJJ3Efhmb6zhfkmdu",
+        "content": "<skill name=\"agent-builder\">\n# Agent Builder\n\nBuild AI agents for any domain - customer service, research, operations, creative work, or specialized business processes.\n\n## The Core Philosophy\n\n> **The model already knows how to be an agent. Your job is to get out of the way.**\n\nAn agent is not complex engineering. It's a simple loop that invites the model to act:\n\n```\nLOOP:\n  Model sees: context + available capabilities\n  Model decides: act or respond\n  If act: execute capability, add result, continue\n  If respond: return to user\n```\n\n**That's it.** The magic isn't in the code - it's in the model. Your code just provides the opportunity.\n\n## The Three Elements\n\n### 1. Capabilities (What can it DO?)\n\nAtomic actions the agent can perform: search, read, create, send, query, modify.\n\n**Design principle**: Start with 3-5 capabilities. Add more only when the agent consistently fails because a capability is missing.\n\n### 2. Knowledge (What does it KNOW?)\n\nDomain expertise injected on-demand: policies, workflows, best practices, schemas.\n\n**Design principle**: Make knowledge available, not mandatory. Load it when relevant, not upfront.\n\n### 3. Context (What has happened?)\n\nThe conversation history - the thread connecting actions into coherent behavior.\n\n**Design principle**: Context is precious. Isolate noisy subtasks. Truncate verbose outputs. Protect clarity.\n\n## Agent Design Thinking\n\nBefore building, understand:\n\n- **Purpose**: What should this agent accomplish?\n- **Domain**: What world does it operate in? (customer service, research, operations, creative...)\n- **Capabilities**: What 3-5 actions are essential?\n- **Knowledge**: What expertise does it need access to?\n- **Trust**: What decisions can you delegate to the model?\n\n**CRITICAL**: Trust the model. Don't over-engineer. Don't pre-specify workflows. Give it capabilities and let it reason.\n\n## Progressive Complexity\n\nStart simple. Add complexity only when real usage reveals the need:\n\n| Level | What to add | When to add it |\n|-------|-------------|----------------|\n| Basic | 3-5 capabilities | Always start here |\n| Planning | Progress tracking | Multi-step tasks lose coherence |\n| Subagents | Isolated child agents | Exploration pollutes context |\n| Skills | On-demand knowledge | Domain expertise needed |\n\n**Most agents never need to go beyond Level 2.**\n\n## Domain Examples\n\n**Business**: CRM queries, email, calendar, approvals\n**Research**: Database search, document analysis, citations\n**Operations**: Monitoring, tickets, notifications, escalation\n**Creative**: Asset generation, editing, collaboration, review\n\nThe pattern is universal. Only the capabilities change.\n\n## Key Principles\n\n1. **The model IS the agent** - Code just runs the loop\n2. **Capabilities enable** - What it CAN do\n3. **Knowledge informs** - What it KNOWS how to do\n4. **Constraints focus** - Limits create clarity\n5. **Trust liberates** - Let the model reason\n6. **Iteration reveals** - Start minimal, evolve from usage\n\n## Anti-Patterns\n\n| Pattern | Problem | Solution |\n|---------|---------|----------|\n| Over-engineering | Complexity before need | Start simple |\n| Too many capabilities | Model confusion | 3-5 to start |\n| Rigid workflows | Can't adapt | Let model decide |\n| Front-loaded knowledge | Context bloat | Load on-demand |\n| Micromanagement | Undercuts intelligence | Trust the model |\n\n## Resources\n\n**Philosophy & Theory**:\n- `references/agent-philosophy.md` - Deep dive into why agents work\n\n**Implementation**:\n- `references/minimal-agent.py` - Complete working agent (~80 lines)\n- `references/tool-templates.py` - Capability definitions\n- `references/subagent-pattern.py` - Context isolation\n\n**Scaffolding**:\n- `scripts/init_agent.py` - Generate new agent projects\n\n## The Agent Mindset\n\n**From**: \"How do I make the system do X?\"\n**To**: \"How do I enable the model to do X?\"\n\n**From**: \"What's the workflow for this task?\"\n**To**: \"What capabilities would help accomplish this?\"\n\nThe best agent code is almost boring. Simple loops. Clear capabilities. Clean context. The magic isn't in the code.\n\n**Give the model capabilities and knowledge. Trust it to figure out the rest.**\n</skill>"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "citations": null,
+        "text": "Here's a summary of the **Agent Builder SOP**:\n\n---\n\n## 🤖 Agent Builder — SOP Summary\n\n### 🧠 Core Philosophy\n> **\"The model already knows how to be an agent. Your job is to get out of the way.\"**\n\nAn agent is simply a loop:\n1. Model sees **context + capabilities**\n2. Model decides to **act or respond**\n3. If act → execute, add result, repeat; If respond → return to user\n\n---\n\n### 🔩 Three Core Elements\n| Element | What It Is | Design Principle |\n|--------|-----------|-----------------|\n| **Capabilities** | Atomic actions (search, read, create, send...) | Start with **3–5 only**; add more when failures demand it |\n| **Knowledge** | Domain expertise (policies, workflows, schemas) | Load **on-demand**, not upfront |\n| **Context** | Conversation history | Keep it **clean & clear**; isolate noisy subtasks |\n\n---\n\n### 📐 Design Thinking (Before Building)\nAsk yourself:\n- **Purpose** — What should the agent accomplish?\n- **Domain** — What world does it operate in?\n- **Capabilities** — What 3–5 actions are essential?\n- **Knowledge** — What expertise does it need?\n- **Trust** — What decisions can you delegate to the model?\n\n---\n\n### 📈 Progressive Complexity (Start Simple!)\n| Level | Add | Only When... |\n|-------|-----|-------------|\n| **Basic** | 3–5 capabilities | Always start here |\n| **Planning** | Progress tracking | Multi-step tasks lose coherence |\n| **Subagents** | Isolated child agents | Exploration pollutes context |\n| **Skills** | On-demand knowledge | Domain expertise is needed |\n\n> ⚠️ **Most agents never need to go beyond Level 2.**\n\n---\n\n### ✅ Key Principles\n1. **The model IS the agent** — code just runs the loop\n2. **Capabilities enable** — what it *can* do\n3. **Knowledge informs** — what it *knows* how to do\n4. **Constraints focus** — limits create clarity\n5. **Trust liberates** — let the model reason\n6. **Iteration reveals** — start minimal, evolve from real usage\n\n---\n\n### 🚫 Anti-Patterns to Avoid\n| Anti-Pattern | Problem | Fix |\n|---|---|---|\n| Over-engineering | Complexity before need | Start simple |\n| Too many capabilities | Model confusion | Stick to 3–5 |\n| Rigid workflows | Can't adapt | Let model decide |\n| Front-loaded knowledge | Context bloat | Load on-demand |\n| Micromanagement | Undercuts intelligence | Trust the model |\n\n---\n\n### 💡 The Agent Mindset Shift\n- ❌ *\"How do I make the system do X?\"*\n- ✅ *\"How do I **enable the model** to do X?\"*\n\nThe best agent code is almost **boring** — simple loops, clear capabilities, clean context. **The magic is in the model, not the code.**",
+        "type": "text"
+      }
+    ]
+  }
+]
+`main`==================================================
+
+
+Here's a summary of the **Agent Builder SOP**:
+
+---
+
+## 🤖 Agent Builder — SOP Summary
+
+### 🧠 Core Philosophy
+> **"The model already knows how to be an agent. Your job is to get out of the way."**
+
+An agent is simply a loop:
+1. Model sees **context + capabilities**
+2. Model decides to **act or respond**
+3. If act → execute, add result, repeat; If respond → return to user
+
+---
+
+### 🔩 Three Core Elements
+| Element | What It Is | Design Principle |
+|--------|-----------|-----------------|
+| **Capabilities** | Atomic actions (search, read, create, send...) | Start with **3–5 only**; add more when failures demand it |
+| **Knowledge** | Domain expertise (policies, workflows, schemas) | Load **on-demand**, not upfront |
+| **Context** | Conversation history | Keep it **clean & clear**; isolate noisy subtasks |
+
+---
+
+### 📐 Design Thinking (Before Building)
+Ask yourself:
+- **Purpose** — What should the agent accomplish?
+- **Domain** — What world does it operate in?
+- **Capabilities** — What 3–5 actions are essential?
+- **Knowledge** — What expertise does it need?
+- **Trust** — What decisions can you delegate to the model?
+
+---
+
+### 📈 Progressive Complexity (Start Simple!)
+| Level | Add | Only When... |
+|-------|-----|-------------|
+| **Basic** | 3–5 capabilities | Always start here |
+| **Planning** | Progress tracking | Multi-step tasks lose coherence |
+| **Subagents** | Isolated child agents | Exploration pollutes context |
+| **Skills** | On-demand knowledge | Domain expertise is needed |
+
+> ⚠️ **Most agents never need to go beyond Level 2.**
+
+---
+
+### ✅ Key Principles
+1. **The model IS the agent** — code just runs the loop
+2. **Capabilities enable** — what it *can* do
+3. **Knowledge informs** — what it *knows* how to do
+4. **Constraints focus** — limits create clarity
+5. **Trust liberates** — let the model reason
+6. **Iteration reveals** — start minimal, evolve from real usage
+
+---
+
+### 🚫 Anti-Patterns to Avoid
+| Anti-Pattern | Problem | Fix |
+|---|---|---|
+| Over-engineering | Complexity before need | Start simple |
+| Too many capabilities | Model confusion | Stick to 3–5 |
+| Rigid workflows | Can't adapt | Let model decide |
+| Front-loaded knowledge | Context bloat | Load on-demand |
+| Micromanagement | Undercuts intelligence | Trust the model |
+
+---
+
+### 💡 The Agent Mindset Shift
+- ❌ *"How do I make the system do X?"*
+- ✅ *"How do I **enable the model** to do X?"*
+
+The best agent code is almost **boring** — simple loops, clear capabilities, clean context. **The magic is in the model, not the code.**
+
+s05 >>
