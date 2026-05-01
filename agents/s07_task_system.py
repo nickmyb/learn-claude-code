@@ -205,9 +205,17 @@ def agent_loop(messages: list):
     while True:
         response = client.messages.create(
             model=MODEL, system=SYSTEM, messages=messages,
-            tools=TOOLS, max_tokens=8000,
+            tools=TOOLS, max_tokens=16000,
+            thinking={
+                "type": "enabled",
+                "budget_tokens": 10000  # 分配给思考的 token 数
+            },
         )
         messages.append({"role": "assistant", "content": response.content})
+
+        from formatter import debug_response_messages
+        debug_response_messages(response, messages)
+
         if response.stop_reason != "tool_use":
             return
         results = []
