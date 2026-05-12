@@ -1,0 +1,32 @@
+# config.json
+
+{
+  "team_name": "default",
+  "members": [
+    {
+      "name": "alice",
+      "role": "coder",
+      "status": "idle"
+    },
+    {
+      "name": "bob",
+      "role": "tester",
+      "status": "idle"
+    }
+  ]
+}
+
+
+# lead.jsonl
+
+
+
+# bob.jsonl
+
+{"type": "broadcast", "from": "lead", "content": "status update: phase 1 complete", "timestamp": 1778603567.328873}
+
+
+# alice.jsonl
+
+{"type": "message", "from": "lead", "content": "Hey Alice! Please send a message to Bob (our tester teammate) introducing yourself and letting him know you're ready to collaborate.", "timestamp": 1778603520.734636}
+{"type": "broadcast", "from": "lead", "content": "status update: phase 1 complete", "timestamp": 1778603567.328526}
