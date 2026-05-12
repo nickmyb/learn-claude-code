@@ -10,3 +10,7 @@
 
 1. 磁盘存储的是micro_compact后的内容,不是原始内容
 2. auto_compact后会丢失最新的用户消息
+
+## 日志记录
+
+- .transcripts 记录LLM调用的message
